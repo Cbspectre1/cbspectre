@@ -1,14 +1,17 @@
+/* Base Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
   color: #333;
   line-height: 1.6;
-  background-image: url('https://cbspectre1.github.io/cbspectre/background.JPG');
+  background-color: #e7e1d1;
+  background-image: url('background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  filter: sepia(0.15) contrast(0.95);
   position: relative;
 }
 
@@ -23,38 +26,40 @@ body::before {
   z-index: 0;
 }
 
+/* Wrapper Styles */
 .wrapper {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #f8f0e1;
+  background-color: #f7f1df;
   background-image:
-    radial-gradient(circle, rgba(0, 0, 0, 0.03) 1%, transparent 70%),
-    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.04) 0.5px, transparent 2px),
-    url('https://cbspectre1.github.io/cbspectre/background.JPG');
+    radial-gradient(circle, rgba(0, 0, 0, 0.05) 1%, transparent 70%),
+    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.03) 0.5px, transparent 2px),
+    url('https://www.transparenttextures.com/patterns/cardboard-flat.png');
   background-blend-mode: overlay;
   background-size: auto, 200px 200px, cover;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35),
-              inset 0 0 10px rgba(0, 0, 0, 0.05),
-              0 2px 4px -1px rgba(0, 0, 0, 0.15);
-  border: 1px solid #666;
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.3),
+    inset 0 0 60px rgba(0, 0, 0, 0.05);
+  border: 2px solid #3e3e3e;
   position: relative;
   z-index: 1;
 }
 
-.wrapper::before {
+.wrapper::after {
   content: "";
   position: absolute;
-  top: 5%;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  background: linear-gradient(to right, transparent 40%, rgba(100, 100, 100, 0.05) 50%, transparent 60%);
-  transform: rotate(-0.5deg);
-  z-index: -1;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: url('https://www.transparenttextures.com/patterns/old-wall.png');
+  opacity: 0.25;
+  z-index: -2;
   pointer-events: none;
 }
 
+/* Header Styles */
 .dossier-header {
   text-align: center;
   border-bottom: 2px solid #555;
@@ -83,6 +88,7 @@ body::before {
   color: #777;
 }
 
+/* Mugshot Section */
 .mugshot-section {
   display: flex;
   justify-content: center;
@@ -93,8 +99,9 @@ body::before {
 .mugshot {
   width: 160px;
   height: auto;
-  border: 3px solid #333;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  border: 4px double #444;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+  filter: sepia(0.25) contrast(0.85);
   transform: rotate(1deg);
 }
 
@@ -102,6 +109,7 @@ body::before {
   transform: rotate(-1deg);
 }
 
+/* Profile Section */
 .profile {
   margin-bottom: 35px;
   padding: 15px;
@@ -114,19 +122,7 @@ body::before {
   color: #555;
 }
 
-.fingerprint-nav {
-  display: none !important;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.85rem;
-  margin-top: 40px;
-  color: #777;
-  border-top: 1px dashed #888;
-  padding-top: 10px;
-}
-
+/* Record Section */
 .record p:first-child,
 .alias {
   font-weight: bold;
@@ -142,18 +138,23 @@ body::before {
   margin-bottom: 15px;
 }
 
+/* Stamp */
 .stamp {
   font-size: 2.5rem;
   font-weight: bold;
-  color: darkred;
-  border: 2px solid darkred;
+  color: #8b0000;
+  border: 2px dashed #8b0000;
+  background: rgba(139, 0, 0, 0.05);
   padding: 8px 12px;
   display: inline-block;
   transform: rotate(-3deg);
   margin-top: 25px;
   margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px #fff;
 }
 
+/* History Table */
 .history-table {
   width: 100%;
   border-collapse: collapse;
@@ -166,6 +167,9 @@ body::before {
   padding: 8px;
   text-align: left;
   font-size: 0.95rem;
+  font-family: 'Courier', monospace;
+  background-color: #fcf8ec;
+  color: #2c2c2c;
 }
 
 .history-table thead th {
@@ -178,6 +182,7 @@ body::before {
   background-color: #f9f9f9;
 }
 
+/* Contact Info */
 .contact-info {
   margin-bottom: 30px;
   padding: 15px;
@@ -211,4 +216,19 @@ body::before {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 40px;
+  color: #777;
+  border-top: 1px dashed #888;
+  padding-top: 10px;
+}
+
+/* Navigation */
+.fingerprint-nav {
+  display: none !important;
 }
