@@ -114,6 +114,10 @@ body::before {
 .profile-details li {
   margin-bottom: 8px;
   color: #555;
+
+.fingerprint-nav {
+  display: none;
+}
 }
 .fingerprint-nav a:hover {
   background-color: #555;
