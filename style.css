@@ -133,7 +133,7 @@ body::before {
 }
 
 .fingerprint-nav {
-  display: none;
+  display: none; !important;
 }
 
 .fingerprint-nav a:hover {
