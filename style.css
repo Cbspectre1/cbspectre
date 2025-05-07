@@ -12,7 +12,6 @@ body {
   position: relative;
 }
 
-
 body::before {
   content: "";
   position: fixed;
@@ -28,23 +27,40 @@ body::before {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: rgba(248, 240, 225, 0.95);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  background-color: #f8f0e1; /* Subtle radial gradient applied below */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25),
+              inset 0 0 5px rgba(0, 0, 0, 0.05),
+              0 2px 3px -1px rgba(0, 0, 0, 0.1); /* Subtle bottom shadow */
   border: 1px solid #888;
   position: relative;
   z-index: 1;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.02) 0%, transparent 70%); /* Subtle radial gradient */
 }
 
 .wrapper::before {
   content: "";
   position: absolute;
   top: 5%;
-  left: 10%;
-  width: 80%;
+  left: 0; /* Extend to full width */
+  width: 100%; /* Full width */
   height: 90%;
-  background: linear-gradient(to right, transparent 45%, rgba(150, 150, 150, 0.03) 50%, transparent 55%);
-  transform: rotate(-1deg);
+  background: linear-gradient(to right, transparent 40%, rgba(100, 100, 100, 0.05) 50%, transparent 60%); /* Slightly more visible */
+  transform: rotate(-0.5deg); /* Subtle rotation */
   z-index: -1;
+  pointer-events: none;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  background-image: url('path/to/your/subtle-stain.png'); /* Replace with the actual path to your stain image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.2; /* Adjust the opacity to your liking */
   pointer-events: none;
 }
 
@@ -114,11 +130,12 @@ body::before {
 .profile-details li {
   margin-bottom: 8px;
   color: #555;
+}
 
 .fingerprint-nav {
   display: none;
 }
-}
+
 .fingerprint-nav a:hover {
   background-color: #555;
   border-radius: 3px;
@@ -161,6 +178,7 @@ body::before {
   position: relative; /* To ensure text is above the overlay */
   z-index: 2;
 }
+
 .footer {
   text-align: center;
   font-size: 0.85rem;
