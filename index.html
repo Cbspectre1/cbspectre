@@ -1,185 +1,63 @@
+Gemini coding
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dossier File: #SPECTRE-001</title>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Special Elite', monospace;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #222;
-    }
-
-  .wrapper {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.85); /* Soft transparency */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  border: 1px solid #ccc;
-  backdrop-filter: blur(1px);
-}
-
-
-    .header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .header h1, .header h2 {
-      margin: 0;
-      letter-spacing: 2px;
-    }
-
-    .mugshots {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .mugshots img {
-      width: 200px;
-      height: auto;
-      border: 2px solid #000;
-      box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-    }
-
-    .record {
-      line-height: 1.8;
-      font-size: 16px;
-    }
-
-    .stamp {
-      font-size: 36px;
-      font-weight: bold;
-      color: red;
-      border: 3px solid red;
-      padding: 10px;
-      display: inline-block;
-      transform: rotate(-5deg);
-      margin-top: 20px;
-    }
-
-    .history-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
-
-    .history-table th, .history-table td {
-      border: 1px solid #000;
-      padding: 10px;
-      text-align: left;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author's Case Files</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <h1>DEPARTMENT OF JUSTICE</h1>
-      <h2>BUREAU OF INVESTIGATION</h2>
-      <p><strong>DOSSIER FILE:</strong> #SPECTRE-001</p>
+    <div class="record-container">
+        <header class="record-header">
+            <h1>AUTHOR'S CASE FILES</h1>
+            <p class="subheading">A satirical investigation into the world of murder mysteries</p>
+        </header>
+
+        <section class="author-profile">
+            <h2>AUTHOR PROFILE</h2>
+            <div class="profile-photo">
+                <img src="author-mugshot.jpg" alt="Author's Profile">
+            </div>
+            <div class="profile-details">
+                <p><strong>Name:</strong> [Author's Name]</p>
+                <p><strong>Alias(es):</strong> The Shadowy Scribe, The Ink Alchemist</p>
+                <p><strong>Known For:</strong> Crafting wickedly witty tales of intrigue and suspense.</p>
+                <p><strong>Modus Operandi:</strong> Employing sharp satire and unexpected twists to dissect the human condition through the lens of murder.</p>
+                <p><strong>Status:</strong> At large in the literary world, captivating readers with every release.</p>
+            </div>
+        </section>
+
+        <section class="case-files">
+            <h2>CASE FILES (Published Works)</h2>
+            <div class="case-file">
+                <h3>CASE #001: The Mysterious Manuscript</h3>
+                <img src="book-cover-1.jpg" alt="Book Cover 1">
+                <p><strong>Synopsis:</strong> A priceless manuscript vanishes, leaving behind a trail of cryptic clues and a cast of suspicious characters ripe for satirical skewering.</p>
+                <p><strong>Status:</strong> Solved (Available Now! <a href="#">Purchase Link</a>)</p>
+            </div>
+
+            <div class="case-file">
+                <h3>CASE #002: The Poisoned Pen</h3>
+                <img src="book-cover-2.jpg" alt="Book Cover 2">
+                <p><strong>Synopsis:</strong> When a renowned literary critic meets an untimely end, the author's signature blend of dark humor and sharp observation takes center stage.</p>
+                <p><strong>Status:</strong> Open (Coming Soon!)</p>
+            </div>
+            </section>
+
+        <section class="contact-info">
+            <h2>CONTACT & APPREHENSION (Social Media & Contact)</h2>
+            <p>You can attempt to reach the author through the following channels:</p>
+            <ul>
+                <li>Twitter: <a href="#">@AuthorHandle</a></li>
+                <li>Email: <a href="#">author@email.com</a></li>
+                <li>Official Website: <a href="#">[Your Main Website Link]</a></li>
+            </ul>
+        </section>
+
+        <footer class="record-footer">
+            <p>&copy; [Year] [C. B. SPECTRE]. All rights reserved. Evidence collected and filed.</p>
+        </footer>
     </div>
-
-    <div class="mugshots">
-      <img src="front.jpg" alt="Mugshot Front View">
-      <img src="side.jpg" alt="Mugshot Side View">
-    </div>
-
-    <div class="record">
-        <p class="alias"><strong>Alias:</strong> C. B. Spectre, MotherFucker, Phantom of the Genre, The Taylor Swift of Thrillers, Bookshelf Banksy, King Ding-a-ling</p>
-      <p><strong>Known Crimes:</strong> Murder of Pacing, Manslaughter of Plotlines, Intent to Withhold Closure</p>
-      <p><strong>Affiliations:</strong> [REDACTED]</p>
-      <p><strong>Last Seen:</strong> Breakin’ fourth walls and leavin’ fingerprints in the margins, while lickin’ plot holes clean and smirkin’ in italics. </p>
-    </div>
-
-    <div class="stamp">CONFIDENTIAL</div>
-
-   <table class="history-table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Offense</th>
-      <th>Location</th>
-      <th>Outcome</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Jan 2024</td>
-      <td>Kicked narrative in the balls</td>
-      <td>Chapter 8</td>
-      <td>Scene begged for mercy, rewrite denied</td>
-    </tr>
-    <tr>
-      <td>Feb 2025</td>
-      <td>Dropped a twist without a parachute</td>
-      <td>Wolfreick Academy</td>
-      <td>Reader choked on their own gasp</td>
-    </tr>
-    <tr>
-      <td>Apr 2025</td>
-      <td>Smuggled cliffhangers through final page</td>
-      <td>Black Site: Epilogue</td>
-      <td>Awaiting extradition to next book</td>
-    </tr>
-    <tr>
-      <td>May 2025</td>
-      <td>Tampered with reader trust, laughed after</td>
-      <td>Author’s subconscious</td>
-      <td>Sentence: infinite rewrites and guilt</td>
-    </tr>
-    <tr>
-      <td>Jun 2025</td>
-      <td>Weaponised pacing to induce whiplash</td>
-      <td>Scene 42.5</td>
-      <td>Timeline ruptured, readers left dazed</td>
-    </tr>
-    <tr>
-      <td>Jul 2025</td>
-      <td>Concealed exposition under layers of sarcasm</td>
-      <td>Dialogue Thread B</td>
-      <td>Critics baffled, suspects applauded</td>
-    </tr>
-    <tr>
-      <td>Aug 2025</td>
-      <td>Possession of a metaphor with intent to confuse</td>
-      <td>Inner Monologue Alley</td>
-      <td>Confiscated. Metaphor escaped custody</td>
-    </tr>
-    <tr>
-      <td>Sep 2025</td>
-      <td>Illegal use of ellipses for dramatic tension.........</td>
-      <td>Interrogation Transcript</td>
-      <td>Sentence deferred... pending further pause</td>
-    </tr>
-    <tr>
-      <td>Oct 2025</td>
-      <td>Identity theft of a narrator mid-chapter</td>
-      <td>Perspective Shift Ward</td>
-      <td>Book seized. POV now listed as “unstable”</td>
-    </tr>
-    <tr>
-      <td>Nov 2025</td>
-      <td>Arson: Set the pacing on fire and danced in the smoke</td>
-      <td>Final Draft v3.0</td>
-      <td>Scene cremated. Rewritten under protest</td>
-    </tr>
-    <tr>
-      <td>Dec 2025</td>
-      <td>Theft of diamond-encrusted miniature crocheted short shorts for reasons still under investigation</td>
-      <td>Evidence Locker 7B</td>
-      <td>Item missing. Motive unknown. Shame implied.</td>
-    </tr>
-  </tbody>
-</table>
-
-  </div>
 </body>
 </html>
