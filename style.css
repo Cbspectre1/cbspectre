@@ -1,17 +1,16 @@
-/* Base Styles */
+/* Global Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-  color: #333;
+  color: #2d2d2d;
   line-height: 1.6;
-  background-color: #e7e1d1;
-  background-image: url('background.jpg');
+  background-image: url('https://cbspectre1.github.io/cbspectre/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  filter: sepia(0.15) contrast(0.95);
+  filter: sepia(0.2) contrast(0.9);
   position: relative;
 }
 
@@ -22,26 +21,22 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(255, 235, 185, 0.15); /* faded paper tint */
   z-index: 0;
+  pointer-events: none;
 }
 
-/* Wrapper Styles */
+/* Page Wrapper */
 .wrapper {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #f7f1df;
-  background-image:
-    radial-gradient(circle, rgba(0, 0, 0, 0.05) 1%, transparent 70%),
-    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.03) 0.5px, transparent 2px),
-    url('https://www.transparenttextures.com/patterns/cardboard-flat.png');
+  background-color: rgba(245, 235, 210, 0.95);
   background-blend-mode: overlay;
-  background-size: auto, 200px 200px, cover;
+  border: 2px solid #444;
   box-shadow:
     0 0 20px rgba(0, 0, 0, 0.3),
     inset 0 0 60px rgba(0, 0, 0, 0.05);
-  border: 2px solid #3e3e3e;
   position: relative;
   z-index: 1;
 }
@@ -49,17 +44,17 @@ body::before {
 .wrapper::after {
   content: "";
   position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
   background: url('https://www.transparenttextures.com/patterns/old-wall.png');
-  opacity: 0.25;
-  z-index: -2;
+  opacity: 0.15;
+  z-index: -1;
   pointer-events: none;
 }
 
-/* Header Styles */
+/* Header Section */
 .dossier-header {
   text-align: center;
   border-bottom: 2px solid #555;
@@ -109,7 +104,7 @@ body::before {
   transform: rotate(-1deg);
 }
 
-/* Profile Section */
+/* Profile & Records */
 .profile {
   margin-bottom: 35px;
   padding: 15px;
@@ -122,7 +117,6 @@ body::before {
   color: #555;
 }
 
-/* Record Section */
 .record p:first-child,
 .alias {
   font-weight: bold;
@@ -154,7 +148,7 @@ body::before {
   text-shadow: 1px 1px #fff;
 }
 
-/* History Table */
+/* Table of History */
 .history-table {
   width: 100%;
   border-collapse: collapse;
@@ -182,7 +176,7 @@ body::before {
   background-color: #f9f9f9;
 }
 
-/* Contact Info */
+/* Contact */
 .contact-info {
   margin-bottom: 30px;
   padding: 15px;
@@ -228,7 +222,7 @@ body::before {
   padding-top: 10px;
 }
 
-/* Navigation */
+/* Nav (currently hidden) */
 .fingerprint-nav {
   display: none !important;
 }
