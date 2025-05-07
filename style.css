@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    color: #333; /* Darker text for better contrast on the yellow */
+    color: #333;
     line-height: 1.6;
     background-image: url('path/to/your/worn-paper-texture.jpg'); /* Replace with your texture */
     background-size: cover;
@@ -196,4 +196,39 @@ body {
 
 .history-table tbody tr:nth-child(even) {
     background-color: #f9f9f9; /* Very light gray for alternating rows */
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 3px solid #888;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px dashed #777;
+    padding-bottom: 5px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
