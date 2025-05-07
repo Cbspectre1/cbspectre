@@ -4,13 +4,14 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: #333;
   line-height: 1.6;
-  background-image: url('background.jpg');
+  background-image: url('https://cbspectre1.github.io/cbspectre/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   position: relative;
 }
+
 
 body::before {
   content: "";
