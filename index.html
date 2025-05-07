@@ -1,199 +1,363 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    color: #333; /* Darker text for better contrast on the yellow */
-    line-height: 1.6;
-    background-image: url('path/to/your/worn-paper-texture.jpg'); /* Replace with your texture */
-    background-size: cover;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier File: #SPECTRE-001</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+New&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('path/to/your/worn-paper-texture.jpg'); /* Replace with your texture */
+            background-size: cover;
+        }
 
-.wrapper {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #f8f0e1; /* Slightly more muted yellow */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* Slightly softer shadow */
-    border: 1px solid #888; /* Darker, aged border */
-    position: relative; /* For potential pseudo-elements for wear */
-}
+        .wrapper {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f8f0e1; /* Slightly more muted yellow */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* Slightly softer shadow */
+            border: 1px solid #888; /* Darker, aged border */
+            position: relative; /* For potential pseudo-elements for wear */
+        }
 
-/* Subtle "crease" effect */
-.wrapper::before {
-    content: "";
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    width: 80%;
-    height: 90%;
-    background: linear-gradient(to right, transparent 45%, rgba(150, 150, 150, 0.03) 50%, transparent 55%);
-    transform: rotate(-1deg);
-    z-index: -1;
-    pointer-events: none;
-}
+        /* Subtle "crease" effect */
+        .wrapper::before {
+            content: "";
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            width: 80%;
+            height: 90%;
+            background: linear-gradient(to right, transparent 45%, rgba(150, 150, 150, 0.03) 50%, transparent 55%);
+            transform: rotate(-1deg);
+            z-index: -1;
+            pointer-events: none;
+        }
 
-.dossier-header {
-    text-align: center;
-    border-bottom: 2px solid #555; /* Darker border */
-    padding-bottom: 15px; /* More padding */
-    margin-bottom: 30px;
-}
+        .dossier-header {
+            text-align: center;
+            border-bottom: 2px solid #555; /* Darker border */
+            padding-bottom: 15px; /* More padding */
+            margin-bottom: 30px;
+        }
 
-.dossier-header h1,
-.dossier-header h2 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.1rem; /* Slightly smaller */
-    letter-spacing: 1px;
-    color: #444; /* Darker color */
-}
+        .dossier-header h1,
+        .dossier-header h2 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 1.1rem; /* Slightly smaller */
+            letter-spacing: 1px;
+            color: #444; /* Darker color */
+        }
 
-.dossier-header h3 {
-    font-size: 2.2rem; /* Slightly larger */
-    color: darkred;
-    margin: 10px 0;
-}
+        .dossier-header h3 {
+            font-size: 2.2rem; /* Slightly larger */
+            color: darkred;
+            margin: 10px 0;
+        }
 
-.case-number {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #777;
-}
+        .case-number {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #777;
+        }
 
-.mugshot-section {
-    display: flex;
-    justify-content: center;
-    gap: 25px; /* More space */
-    margin-bottom: 35px;
-}
+        .mugshot-section {
+            display: flex;
+            justify-content: center;
+            gap: 25px; /* More space */
+            margin-bottom: 35px;
+        }
 
-.mugshot {
-    width: 160px; /* Slightly larger */
-    height: auto;
-    border: 3px solid #333; /* Thicker, darker border */
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* More defined shadow */
-    transform: rotate(1deg); /* Subtle rotation */
-}
+        .mugshot {
+            width: 160px; /* Slightly larger */
+            height: auto;
+            border: 3px solid #333; /* Thicker, darker border */
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* More defined shadow */
+            transform: rotate(1deg); /* Subtle rotation */
+        }
 
-.mugshot:last-child {
-    transform: rotate(-1deg); /* Opposite subtle rotation */
-}
+        .mugshot:last-child {
+            transform: rotate(-1deg); /* Opposite subtle rotation */
+        }
 
-.profile {
-    margin-bottom: 35px;
-    padding: 15px;
-    border-left: 3px solid #888; /* Added a left border for visual separation */
-    background-color: rgba(255, 255, 255, 0.1); /* Very subtle background */
-}
+        .profile {
+            margin-bottom: 35px;
+            padding: 15px;
+            border-left: 3px solid #888; /* Added a left border for visual separation */
+            background-color: rgba(255, 255, 255, 0.1); /* Very subtle background */
+        }
 
-.profile h4 {
-    font-size: 1.3rem; /* Slightly larger */
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #333;
-    border-bottom: 1px dashed #777; /* Added a dashed bottom border */
-    padding-bottom: 5px;
-}
+        .profile h4 {
+            font-size: 1.3rem; /* Slightly larger */
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 1px dashed #777; /* Added a dashed bottom border */
+            padding-bottom: 5px;
+        }
 
-.profile-details li {
-    margin-bottom: 8px;
-    color: #555;
-}
+        .profile-details li {
+            margin-bottom: 8px;
+            color: #555;
+        }
 
-.fingerprint-nav {
-    display: none; /* Let's hold off on this for a single-page site for now */
-}
+        .fingerprint-nav {
+            display: none; /* Let's hold off on this for a single-page site for now */
+        }
 
-.fingerprint-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        .fingerprint-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-.fingerprint-nav a:hover {
-    background-color: #555;
-    border-radius: 3px;
-}
+        .fingerprint-nav a:hover {
+            background-color: #555;
+            border-radius: 3px;
+        }
 
-.footer {
-    text-align: center;
-    font-size: 0.85rem; /* Slightly smaller */
-    margin-top: 40px; /* Reduced margin */
-    color: #777;
-    border-top: 1px dashed #888; /* Added a top border */
-    padding-top: 10px;
-}
+        .footer {
+            text-align: center;
+            font-size: 0.85rem; /* Slightly smaller */
+            margin-top: 40px; /* Reduced margin */
+            color: #777;
+            border-top: 1px dashed #888; /* Added a top border */
+            padding-top: 10px;
+        }
 
-.overlay {
-    display: none; /* Assuming this was for a potential overlay that we might not need now */
-}
+        .overlay {
+            display: none; /* Assuming this was for a potential overlay that we might not need now */
+        }
 
-.record p:first-child {
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-    color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    background: rgba(255, 255, 255, 0.1); /* Subtle background */
-    padding: 12px 15px;
-    border-left: 4px solid crimson;
-    border-radius: 4px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* Reduced margin */
-}
+        .record p:first-child {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            background: rgba(255, 255, 255, 0.1); /* Subtle background */
+            padding: 12px 15px;
+            border-left: 4px solid crimson;
+            border-radius: 4px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px; /* Reduced margin */
+        }
 
-.alias {
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-    color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    background: rgba(255, 255, 255, 0.1); /* Subtle background */
-    padding: 12px 15px;
-    border-left: 4px solid crimson;
-    border-radius: 4px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* Reduced margin */
-}
+        .alias {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            background: rgba(255, 255, 255, 0.1); /* Subtle background */
+            padding: 12px 15px;
+            border-left: 4px solid crimson;
+            border-radius: 4px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px; /* Reduced margin */
+        }
 
-/* Style for the "CONFIDENTIAL" stamp */
-.stamp {
-    font-size: 2.5rem; /* Adjusted size */
-    font-weight: bold;
-    color: darkred;
-    border: 2px solid darkred; /* Adjusted border */
-    padding: 8px 12px; /* Adjusted padding */
-    display: inline-block;
-    transform: rotate(-3deg); /* Slightly adjusted rotation */
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
+        /* Style for the "CONFIDENTIAL" stamp */
+        .stamp {
+            font-size: 2.5rem; /* Adjusted size */
+            font-weight: bold;
+            color: darkred;
+            border: 2px solid darkred; /* Adjusted border */
+            padding: 8px 12px; /* Adjusted padding */
+            display: inline-block;
+            transform: rotate(-3deg); /* Slightly adjusted rotation */
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
 
-/* Style for the history table */
-.history-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px; /* Reduced margin */
-}
+        /* Style for the history table */
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px; /* Reduced margin */
+        }
 
-.history-table th,
-.history-table td {
-    border: 1px solid #777; /* Darker border */
-    padding: 8px; /* Reduced padding */
-    text-align: left;
-    font-size: 0.95rem;
-}
+        .history-table th,
+        .history-table td {
+            border: 1px solid #777; /* Darker border */
+            padding: 8px; /* Reduced padding */
+            text-align: left;
+            font-size: 0.95rem;
+        }
 
-.history-table thead th {
-    background-color: #ddd; /* Light gray header */
-    font-weight: bold;
-    color: #333;
-}
+        .history-table thead th {
+            background-color: #ddd; /* Light gray header */
+            font-weight: bold;
+            color: #333;
+        }
 
-.history-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Very light gray for alternating rows */
-}
+        .history-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Very light gray for alternating rows */
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 3px solid #888;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info h2 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 1px dashed #777;
+            padding-bottom: 5px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="dossier-header">
+            <h1>DEPARTMENT OF JUSTICE</h1>
+            <h2>BUREAU OF INVESTIGATION</h2>
+            <h3>DOSSIER FILE: #SPECTRE-001</h3>
+            <p class="case-number">Case Initiated: [Date]</p>
+        </div>
+
+        <div class="mugshot-section">
+            <img src="front.jpg" alt="Mugshot Front View" class="mugshot">
+            <img src="side.jpg" alt="Mugshot Side View" class="mugshot">
+        </div>
+
+        <div class="record">
+            <p class="alias"><strong>Alias:</strong> C. B. Spectre, MotherFucker, Phantom of the Genre, The Taylor Swift of Thrillers, Bookshelf Banksy, King Ding-a-ling</p>
+            <p><strong>Known Crimes:</strong> Murder of Pacing, Manslaughter of Plotlines, Intent to Withhold Closure</p>
+            <p><strong>Affiliations:</strong> [REDACTED]</p>
+            <p><strong>Last Seen:</strong> Breakin’ fourth walls and leavin’ fingerprints in the margins, while lickin’ plot holes clean and smirkin’ in italics. </p>
+        </div>
+
+        <div class="stamp">CONFIDENTIAL</div>
+
+        <section class="contact-info">
+            <h2>WANTED: Reader Interaction (Attempt Contact Below)</h2>
+            <p>Should you dare to engage with the mind behind these morbidly amusing tales, you may try the following avenues. Success is not guaranteed, and the author bears no responsibility for existential crises or sudden urges to solve fictional crimes.</p>
+            <ul>
+                <li>Twitter: <a href="#">@AuthorHandle</a> (Proceed with caution, may contain strong opinions and questionable puns)</li>
+                <li>Email: <a href="#">author@email.com</a> (Responses are as timely as a well-plotted alibi)</li>
+                <li>Official Website: <a href="#">[Your Main Website Link]</a> (Enter at your own risk, may lead to further immersion in fictional worlds)</li>
+            </ul>
+            <p style="font-size: 0.9em; font-style: italic; margin-top: 20px;">Should you catch a glimpse of this elusive author or any of their shadowy associates, please attempt a sketch. Discreetly leave any such artistic renderings at your nearest independent bookstore with a note indicating it's for "The Case File Website." (The author has... connections.)</p>
+        </section>
+
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Offense</th>
+                    <th>Location</th>
+                    <th>Outcome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan 2024</td>
+                    <td>Kicked narrative in the balls</td>
+                    <td>Chapter 8</td>
+                    <td>Scene begged for mercy, rewrite denied</td>
+                </tr>
+                <tr>
+                    <td>Feb 2025</td>
+                    <td>Dropped a twist without a parachute</td>
+                    <td>Wolfreick Academy</td>
+                    <td>Reader choked on their own gasp</td>
+                </tr>
+                <tr>
+                    <td>Apr 2025</td>
+                    <td>Smuggled cliffhangers through final page</td>
+                    <td>Black Site: Epilogue</td>
+                    <td>Awaiting extradition to next book</td>
+                </tr>
+                <tr>
+                    <td>May 2025</td>
+                    <td>Tampered with reader trust, laughed after</td>
+                    <td>Author’s subconscious</td>
+                    <td>Sentence: infinite rewrites and guilt</td>
+                </tr>
+                <tr>
+                    <td>Jun 2025</td>
+                    <td>Weaponised pacing to induce whiplash</td>
+                    <td>Scene 42.5</td>
+                    <td>Timeline ruptured, readers left dazed</td>
+                </tr>
+                <tr>
+                    <td>Jul 2025</td>
+                    <td>Concealed exposition under layers of sarcasm</td>
+                    <td>Dialogue Thread B</td>
+                    <td>Critics baffled, suspects applauded</td>
+                </tr>
+                <tr>
+                    <td>Aug 2025</td>
+                    <td>Possession of a metaphor with intent to confuse</td>
+                    <td>Inner Monologue Alley</td>
+                    <td>Confiscated. Metaphor escaped custody</td>
+                </tr>
+                <tr>
+                    <td>Sep 2025</td>
+                    <td>Illegal use of ellipses for dramatic tension.........</td>
+                    <td>Interrogation Transcript</td>
+                    <td>Sentence deferred... pending further pause</td>
+                </tr>
+                <tr>
+                    <td>Oct 2025</td>
+                    <td>Identity theft of a narrator mid-chapter</td>
+                    <td>Perspective Shift Ward</td>
+                    <td>Book seized. POV now listed as “unstable”</td>
+                </tr>
+                <tr>
+                    <td>Nov 2025</td>
+                    <td>Arson: Set the pacing on fire and danced in the smoke</td>
+                    <td>Final Draft v3.0</td>
+                    <td>Scene cremated. Rewritten under protest</td>
+                </tr>
+                <tr>
+                    <td>Dec 2025</td>
+                    <td>Theft of diamond-encrusted miniature crocheted short shorts for reasons still under investigation</td>
+                    <td>Evidence Locker 7B</td>
+                    <td>Item missing. Motive unknown. Shame implied.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            &copy; [Year] [Author's Name]. All rights reserved. Evidence collected and filed.
+        </div>
+    </div>
+</body>
+</html>
