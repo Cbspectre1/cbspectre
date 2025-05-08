@@ -311,15 +311,6 @@ width: 100%;
     display: block;
   }
 
-  .stamp {
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-10deg);
-    font-size: 24px;
-    padding: 6px 14px;
-    border-width: 2px;
-  }
-
   .record p:first-child,
   .alias {
     font-size: 1rem;
@@ -334,6 +325,22 @@ width: 100%;
 
   .profile-details li {
     margin-bottom: 6px;
+  }
+
+  .history-table-wrapper {
+    position: relative;
+  }
+
+  .history-table-wrapper .stamp {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform: rotate(-12deg);
+    font-size: 22px;
+    padding: 6px 14px;
+    border-width: 3px;
+    z-index: 2;
+    pointer-events: none;
   }
 
   .history-table th,
