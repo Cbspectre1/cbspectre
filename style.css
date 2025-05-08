@@ -416,5 +416,20 @@ body::before {
     padding-top: 8px;
 
   }
+@media (max-width: 600px) {
+  /* Your existing styles... */
+
+  .history-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth iOS scroll */
+  }
+
+  .history-table table {
+    width: 100%;
+    min-width: 600px; /* Ensures table content doesn't squish */
+  }
+}
 
 }
