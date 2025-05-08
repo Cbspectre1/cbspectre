@@ -146,31 +146,31 @@ body::before {
 
 .stamp {
   display: inline-block;
-  font-family: sans-serif; /* Using a generic sans-serif font */
-  font-size: 30px; /* Let's try a slightly smaller size */
+  font-family: sans-serif; /* Standard sans-serif */
+  font-size: 28px; /* Slightly smaller font */
   font-weight: bold;
-  color: red; /* Match the red color */
+  color: red;
   text-transform: uppercase;
-  letter-spacing: 1px; /* Adjust letter spacing if needed */
-  border: 3px solid red; /* Solid red border */
-  padding: 8px 15px; /* More specific padding to control shape */
-  border-radius: 5px; /* Slight rounding */
-  transform: rotate(-15deg); /* Match the approximate rotation */
-  background-color: transparent; /* Transparent background */
+  letter-spacing: 1px;
+  border: 4px solid red; /* Slightly thicker border */
+  padding: 10px 25px; /* Adjust padding for a wider rectangle */
+  border-radius: 3px; /* Subtle rounding */
+  transform: rotate(-12deg); /* Minor adjustment to rotation */
+  background-color: transparent;
   box-shadow: none;
   text-shadow: none;
-  position: absolute; /* Take it out of normal flow */
-  top: 55%; /* Adjust vertical positioning - try a bit lower */
-  left: 50%; /* Horizontal centering */
-  transform: translate(-50%, -50%) rotate(-15deg); /* Center and rotate */
-  z-index: 2; /* Above the table */
-  pointer-events: none; /* Prevent interaction */
+  position: absolute;
+  top: 52%; /* Fine-tune vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .wrapper {
   position: relative;
   z-index: 1;
-  padding-bottom: 120px; /* Increase bottom padding slightly */
+  padding-bottom: 150px; /* Give more space at the bottom */
 }
 
 .history-table {
