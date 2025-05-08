@@ -254,19 +254,37 @@ width: 100%;
 }
 
 /* Responsive Styles for Phones (max-width: 600px) */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   body {
     font-size: 0.9rem;
     padding: 10px;
     background-size: auto;
     background-position: top center;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .wrapper {
+    width: 100%;
     max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
   }
+
+  img, table {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  * {
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
 
   .dossier-header h1 {
     font-size: 1rem;
