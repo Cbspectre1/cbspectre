@@ -147,33 +147,38 @@ body::before {
 .stamp {
   display: inline-block;
   font-family: sans-serif; /* Using a generic sans-serif font */
-  font-size: 36px; /* Adjust the size as needed */
+  font-size: 30px; /* Let's try a slightly smaller size */
   font-weight: bold;
   color: red; /* Match the red color */
   text-transform: uppercase;
   letter-spacing: 1px; /* Adjust letter spacing if needed */
   border: 3px solid red; /* Solid red border */
-  padding: 10px 20px; /* Adjust padding to control the rectangle's size */
-  border-radius: 5px; /* Add slight rounding to the corners */
+  padding: 8px 15px; /* More specific padding to control shape */
+  border-radius: 5px; /* Slight rounding */
   transform: rotate(-15deg); /* Match the approximate rotation */
-  background-color: transparent; /* Ensure a transparent background */
+  background-color: transparent; /* Transparent background */
   box-shadow: none;
   text-shadow: none;
   position: absolute; /* Take it out of normal flow */
-  top: 50%; /* Initial vertical centering */
-  left: 50%; /* Initial horizontal centering */
+  top: 55%; /* Adjust vertical positioning - try a bit lower */
+  left: 50%; /* Horizontal centering */
   transform: translate(-50%, -50%) rotate(-15deg); /* Center and rotate */
-  z-index: 2; /* Ensure it's above the table */
+  z-index: 2; /* Above the table */
   pointer-events: none; /* Prevent interaction */
 }
 
-/* Table of History */
+.wrapper {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 120px; /* Increase bottom padding slightly */
+}
+
 .history-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  position: relative; /* Establish stacking context */
-  z-index: 1; /* Ensure table is below the stamp */
+  position: relative;
+  z-index: 1;
 }
 
 .history-table th,
