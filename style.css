@@ -283,8 +283,6 @@ width: 100%;
     box-sizing: border-box;
     word-wrap: break-word;
   }
-}
-
 
   .dossier-header h1 {
     font-size: 1rem;
@@ -305,24 +303,22 @@ width: 100%;
     margin-bottom: 25px;
   }
 
-.mugshot {
-  width: 100%;
-  max-width: 340px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-
+  .mugshot {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
 
   .stamp {
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-10deg);
-  font-size: 24px;
-  padding: 6px 14px;
-  border-width: 2px;
-}
-
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    font-size: 24px;
+    padding: 6px 14px;
+    border-width: 2px;
+  }
 
   .record p:first-child,
   .alias {
@@ -338,14 +334,6 @@ width: 100%;
 
   .profile-details li {
     margin-bottom: 6px;
-  }
-
-  .stamp {
-    font-size: 20px;
-    padding: 6px 12px;
-    border-width: 2px;
-    transform: rotate(-10deg);
-    top: 45%;
   }
 
   .history-table th,
