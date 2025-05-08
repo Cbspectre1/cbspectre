@@ -145,15 +145,23 @@ body::before {
 }
 
 .stamp {
-      font-size: 36px;
-      font-weight: bold;
-      color: red;
-      border: 3px solid red;
-      padding: 10px;
-      display: inline-block;
-      transform: rotate(-5deg);
-      margin-top: 20px;
-    }
+  display: inline-block;
+  font-family: 'Stardos Stencil', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #a10000;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 5px solid #a10000;
+  padding: 16px 32px;
+  border-radius: 4px;
+  transform: rotate(-10deg);
+  background-color: transparent;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: none;
+  text-shadow: none;
+}
 
 
 /* Table of History */
