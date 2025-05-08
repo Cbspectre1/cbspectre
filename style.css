@@ -104,7 +104,7 @@ body::before {
 }
 
 .mugshot {
-  width: 160px;
+  width: 400px;
   height: auto;
   border: 4px double #444;
   box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
