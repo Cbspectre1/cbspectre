@@ -254,3 +254,167 @@ body::before {
 .fingerprint-nav {
   display: none !important;
 }
+
+/* Responsive Styles for Phones (max-width: 600px is a common breakpoint) */
+
+@media (max-width: 600px) {
+
+  body {
+
+    font-size: 0.9rem; /* Slightly smaller base font size */
+
+    padding: 10px; /* Add some padding around the edges */
+
+    background-size: auto; /* Adjust background size */
+
+    background-position: top center; /* Adjust background position */
+
+  }
+
+
+
+  .wrapper {
+
+    max-width: 100%; /* Make the wrapper take full width */
+
+    margin: 20px auto; /* Adjust margins */
+
+    padding: 20px; /* Adjust padding */
+
+  }
+
+
+
+  .dossier-header h1 {
+
+    font-size: 1rem;
+
+  }
+
+
+
+  .dossier-header h2 {
+
+    font-size: 0.9rem;
+
+  }
+
+
+
+  .dossier-header h3 {
+
+    font-size: 1.8rem;
+
+  }
+
+
+
+  .mugshot-section {
+
+    flex-direction: column; /* Stack mugshots vertically */
+
+    align-items: center; /* Center them horizontally */
+
+    gap: 15px; /* Reduce gap */
+
+    margin-bottom: 25px;
+
+  }
+
+
+
+  .mugshot {
+
+    width: 120px; /* Smaller mugshot size */
+
+  }
+
+
+
+  .record p:first-child,
+
+  .alias {
+
+    font-size: 1rem;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+  }
+
+
+
+  .profile {
+
+    padding: 10px;
+
+    margin-bottom: 25px;
+
+  }
+
+
+
+  .profile-details li {
+
+    margin-bottom: 6px;
+
+  }
+
+
+
+  .stamp {
+
+    font-size: 20px; /* Smaller stamp font */
+
+    padding: 6px 12px; /* Adjust stamp padding */
+
+    border-width: 2px; /* Thinner border */
+
+    transform: rotate(-10deg); /* Adjust rotation if needed */
+
+    top: 45%; /* Adjust vertical position for smaller screen */
+
+  }
+
+
+
+  .history-table th,
+
+  .history-table td {
+
+    font-size: 0.8rem; /* Smaller table font */
+
+    padding: 6px;
+
+  }
+
+
+
+  .contact-info h2 {
+
+    font-size: 1.1rem;
+
+  }
+
+
+
+  .contact-info li {
+
+    margin-bottom: 8px;
+
+  }
+
+
+
+  .footer {
+
+    font-size: 0.75rem;
+
+    margin-top: 30px;
+
+    padding-top: 8px;
+
+  }
+
+}
