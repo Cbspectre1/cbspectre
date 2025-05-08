@@ -146,22 +146,23 @@ body::before {
 
 .stamp {
   display: inline-block;
-  font-family: 'Stardos Stencil', sans-serif;
-  font-size: 48px;
+  font-family: 'Special Elite', monospace;
+  font-size: 52px;
   font-weight: 700;
   color: #a10000;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  border: 5px solid #a10000;
-  padding: 16px 32px;
+  letter-spacing: 3px;
+  border: 6px solid #a10000;
+  padding: 18px 32px;
   border-radius: 4px;
-  transform: rotate(-10deg);
+  transform: rotate(-8deg);
   background-color: transparent;
-  margin: 50px auto;
-  text-align: center;
   box-shadow: none;
   text-shadow: none;
+  margin: 50px auto;
+  text-align: center;
 }
+
 
 
 /* Table of History */
