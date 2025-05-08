@@ -290,6 +290,40 @@ width: 100%;
   color: red;
 }
 
+.evidence-photo {
+  float: right;
+  margin: 10px 0 20px 30px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.evidence-photo img {
+  width: 100%;
+  border: 2px solid #444;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(2deg);
+}
+
+.exhibit-label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px 0 0;
+  color: darkred;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.caption {
+  font-size: 0.75rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #555;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
 /* Responsive Styles for Phones (max-width: 600px) */
 @media (max-width: 760px) {
   body {
@@ -408,4 +442,15 @@ width: 100%;
     border-width: 2px;
     z-index: 2;
   }
+.evidence-photo {
+  float: none;
+  margin: 20px auto;
+  max-width: 80%;
+  display: block;
+}
+
+.evidence-photo img {
+  transform: rotate(0deg);
+}
+
 }
