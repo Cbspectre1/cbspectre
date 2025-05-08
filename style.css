@@ -45,12 +45,12 @@ body::before {
   background-color: rgba(245, 235, 210, 0.95);
   background-blend-mode: overlay;
   border: 2px solid #5a3e2b;
-
   box-shadow:
     0 0 20px rgba(0, 0, 0, 0.3),
     inset 0 0 60px rgba(0, 0, 0, 0.05);
-  position: relative;
+  position: relative; /* Make this relative for absolute positioning of stamp */
   z-index: 1;
+  padding-bottom: 100px; /* Add padding to ensure stamp doesn't clip */
 }
 
 .wrapper::after {
@@ -146,27 +146,34 @@ body::before {
 
 .stamp {
   display: inline-block;
-  font-family: sans-serif; /* Or any other sans-serif font */
+  font-family: sans-serif; /* Using a generic sans-serif font */
   font-size: 36px; /* Adjust the size as needed */
   font-weight: bold;
-  color: #a10000;
+  color: red; /* Match the red color */
   text-transform: uppercase;
-  letter-spacing: 1px; /* Adjust letter spacing */
-  border: 4px solid #a10000; /* Adjust border thickness */
-  padding: 10px 20px; /* Adjust padding */
-  border-radius: 5px; /* Optional: for rounded corners */
-  transform: rotate(-8deg);
-  background-color: transparent;
+  letter-spacing: 1px; /* Adjust letter spacing if needed */
+  border: 3px solid red; /* Solid red border */
+  padding: 10px 20px; /* Adjust padding to control the rectangle's size */
+  border-radius: 5px; /* Add slight rounding to the corners */
+  transform: rotate(-15deg); /* Match the approximate rotation */
+  background-color: transparent; /* Ensure a transparent background */
   box-shadow: none;
   text-shadow: none;
-  margin: 50px auto;
-  text-align: center;
+  position: absolute; /* Take it out of normal flow */
+  top: 50%; /* Initial vertical centering */
+  left: 50%; /* Initial horizontal centering */
+  transform: translate(-50%, -50%) rotate(-15deg); /* Center and rotate */
+  z-index: 2; /* Ensure it's above the table */
+  pointer-events: none; /* Prevent interaction */
 }
+
 /* Table of History */
 .history-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  position: relative; /* Establish stacking context */
+  z-index: 1; /* Ensure table is below the stamp */
 }
 
 .history-table th,
