@@ -145,26 +145,15 @@ body::before {
 }
 
 .stamp {
-  display: inline-block;
-  font-size: 36px;
-  font-weight: 900;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #a10000;
-  padding: 10px;
-  border: 3px solid #a10000;
-  border-radius: 10px;
-  transform: rotate(-5deg);
-  background-color: transparent;
-  mix-blend-mode: multiply;
-  opacity: 1;
-  box-shadow: none;
-  text-shadow: none;
-  margin: 20px auto;
-}
-
-
+      font-size: 36px;
+      font-weight: bold;
+      color: red;
+      border: 3px solid red;
+      padding: 10px;
+      display: inline-block;
+      transform: rotate(-5deg);
+      margin-top: 20px;
+    }
 
 
 /* Table of History */
