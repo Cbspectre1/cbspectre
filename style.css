@@ -13,8 +13,7 @@ background-color: #f4ebd4; /* soft parchment tone */
   background-position: center center;
   filter: sepia(0.2) contrast(0.9);
   position: relative;
-  opacity: 0;
-  transition: opacity 0.6s ease-in;
+  opacity: 1;
 }
 
 body.loaded {
