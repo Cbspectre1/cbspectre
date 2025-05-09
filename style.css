@@ -5,7 +5,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: #2d2d2d;
   line-height: 1.6;
-  background-color: #3e2e20;
+background-color: #f4ebd4; /* soft parchment tone */
   background-image: url('https://cbspectre1.github.io/cbspectre/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
