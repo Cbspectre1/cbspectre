@@ -1,3 +1,9 @@
 User-agent: *
-Allow: /
+Disallow: /
+
+Allow: /INVITE.png
+Allow: /ISURVIVED.png
+Allow: /SPECTRESHLAVI.png
+Allow: /Someofthemcbspectre.jpg
+
 Sitemap: https://www.cbspectre.com/sitemap.xml
