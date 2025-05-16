@@ -12,19 +12,24 @@
     <lastmod>2025-05-10T14:15:15+00:00</lastmod>
 
     <image:image>
-      <image:loc>https://cbspectre1.github.io/cbspectre/INVITE.png</image:loc>
-      <image:title>Wolfreick Academy Invitation - Some of Them by C. B. Spectre</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://cbspectre1.github.io/cbspectre/ISURVIVED.png</image:loc>
-      <image:title>I Survived Some of Them - Barely (Hamster Heartbreak Art)</image:title>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://cbspectre1.github.io/cbspectre/SPECTRESHLAVI.png</image:loc>
-      <image:title>Surveillance Photo - Detective Hamster and Mysterious Figure</image:title>
-    </image:image>
+  <image:loc>https://cbspectre1.github.io/cbspectre/INVITE.png</image:loc>
+  <image:title>Wolfreick Academy Invitation – Official Post by C. B. Spectre</image:title>
+  <image:caption>An official invitation to Wolfreick Academy — issued via Instagram by author C. B. Spectre. This “No Way Out” document has been circulated among Spectres as both a rite of passage and a warning. Fans have called it the beginning of their descent — a call to chaos, murder, and twisted allegiance. Not everyone survives orientation.</image:caption>
+</image:image>
+
+<image:image>
+  <image:loc>https://cbspectre1.github.io/cbspectre/ISURVIVED.png</image:loc>
+  <image:title>I Survived Some of Them - Barely (Fan Reaction Hamster Meme)</image:title>
+  <image:caption>A fan-made reaction image depicting emotional trauma after finishing "Some of Them" by C. B. Spectre. The sad cartoon hamster clutches a broken heart — bandaged, but not healed. Rumoured to be inspired by Little Shlav himself, this unofficial tribute has been shared by Spectres across the web.</image:caption>
+</image:image>
+
+<image:image>
+  <image:loc>https://cbspectre1.github.io/cbspectre/SPECTRESHLAVI.png</image:loc>
+  <image:title>Leaked Surveillance File – Alleged Sighting of C. B. Spectre</image:title>
+  <image:caption>This grainy surveillance file is believed to be the only visual evidence of C. B. Spectre in the wild. Recovered under classified circumstances, it has been passed between Spectres as proof that the author is not only watching — but orchestrating. Many claim the figure in the shadows is Spectre himself. Others aren’t so sure. The truth remains redacted.</image:caption>
+</image:image>
+
+
   </url>
 
 </urlset>
