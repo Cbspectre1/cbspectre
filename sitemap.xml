@@ -2,13 +2,29 @@
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
+
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>https://www.cbspectre.com/</loc>
     <lastmod>2025-05-10T14:15:15+00:00</lastmod>
+
+    <image:image>
+      <image:loc>https://cbspectre1.github.io/cbspectre/INVITE.png</image:loc>
+      <image:title>Wolfreick Academy Invitation - Some of Them by C. B. Spectre</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://cbspectre1.github.io/cbspectre/ISURVIVED.png</image:loc>
+      <image:title>I Survived Some of Them - Barely (Hamster Heartbreak Art)</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://cbspectre1.github.io/cbspectre/SPECTRESHLAVI.png</image:loc>
+      <image:title>Surveillance Photo - Detective Hamster and Mysterious Figure</image:title>
+    </image:image>
   </url>
 
 </urlset>
