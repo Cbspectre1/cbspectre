@@ -6,7 +6,7 @@ body {
   color: #2d2d2d;
   line-height: 1.6;
 background-color: #f4ebd4; /* soft parchment tone */
-  background-image: url('https://cbspectre1.github.io/cbspectre/background.jpg');
+  background-image: url('images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ width: 100%;
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-image: url('reportpaper.jpg');
+  background-image: url('images/reportpaper.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
