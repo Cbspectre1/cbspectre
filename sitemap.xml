@@ -6,35 +6,33 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>https://www.cbspectre.com/</loc>
-    <lastmod>2025-05-10T14:15:15+00:00</lastmod>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
 
     <image:image>
-  <image:loc>https://cbspectre1.github.io/cbspectre/INVITE.png</image:loc>
-  <image:title>Wolfreick Academy Invitation – Official Post by C. B. Spectre</image:title>
-  <image:caption>An official invitation to Wolfreick Academy — issued via Instagram by author C. B. Spectre. This “No Way Out” document has been circulated among Spectres as both a rite of passage and a warning. Fans have called it the beginning of their descent — a call to chaos, murder, and twisted allegiance. Not everyone survives orientation.</image:caption>
-</image:image>
+      <image:loc>https://www.cbspectre.com/images/INVITE.png</image:loc>
+      <image:title>Wolfreick Academy Invitation – Official Post by C. B. Spectre</image:title>
+      <image:caption>An official invitation to Wolfreick Academy — issued via Instagram by author C. B. Spectre. This “No Way Out” document has been circulated among Spectres as both a rite of passage and a warning.</image:caption>
+    </image:image>
 
-<image:image>
-  <image:loc>https://cbspectre1.github.io/cbspectre/ISURVIVED.png</image:loc>
-  <image:title>I Survived Some of Them - Barely (Fan Reaction Hamster Meme)</image:title>
-  <image:caption>A fan-made reaction image depicting emotional trauma after finishing "Some of Them" by C. B. Spectre. The sad cartoon hamster clutches a broken heart — bandaged, but not healed. Rumoured to be inspired by Little Shlav himself, this unofficial tribute has been shared by Spectres across the web.</image:caption>
-</image:image>
+    <image:image>
+      <image:loc>https://www.cbspectre.com/images/ISURVIVED.png</image:loc>
+      <image:title>I Survived Some of Them - Barely (Fan Reaction Hamster Meme)</image:title>
+      <image:caption>A fan-made reaction image depicting emotional trauma after finishing "Some of Them" by C. B. Spectre. The sad cartoon hamster clutches a broken heart — bandaged, but not healed.</image:caption>
+    </image:image>
 
-<image:image>
-  <image:loc>https://cbspectre1.github.io/cbspectre/SPECTRESHLAVI.png</image:loc>
-  <image:title>Leaked Surveillance File – Alleged Sighting of C. B. Spectre</image:title>
-  <image:caption>This grainy surveillance file is believed to be the only visual evidence of C. B. Spectre in the wild. Recovered under classified circumstances, it has been passed between Spectres as proof that the author is not only watching — but orchestrating. Many claim the figure in the shadows is Spectre himself. Others aren’t so sure. The truth remains redacted.</image:caption>
-</image:image>
+    <image:image>
+      <image:loc>https://www.cbspectre.com/images/SPECTRESHLAVI.png</image:loc>
+      <image:title>Leaked Surveillance File – Alleged Sighting of C. B. Spectre</image:title>
+      <image:caption>This surveillance file is believed to be the only visual evidence of C. B. Spectre in the wild. Spectres claim the figure in the shadows is the author himself. Others aren’t so sure.</image:caption>
+    </image:image>
 
-<image:image>
-  <image:loc>https://cbspectre1.github.io/cbspectre/Someofthemcbspectre.jpg</image:loc>
-  <image:title>Book Cover – Some of Them by C. B. Spectre</image:title>
-  <image:caption>The official book cover for "Some of Them" — a darkly funny, psychologically twisted thriller by C. B. Spectre. This is the image readers are calling unforgettable, chilling, and cinematic. For Spectres, this isn’t just a cover... it’s a warning.</image:caption>
-</image:image>
-
+    <image:image>
+      <image:loc>https://www.cbspectre.com/images/Someofthemcbspectre.jpg</image:loc>
+      <image:title>Book Cover – Some of Them by C. B. Spectre</image:title>
+      <image:caption>The official cover for "Some of Them" — a darkly funny, psychologically twisted thriller by C. B. Spectre. For Spectres, this isn’t just a cover... it’s a warning.</image:caption>
+    </image:image>
 
   </url>
 
