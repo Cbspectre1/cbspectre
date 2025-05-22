@@ -21,11 +21,11 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Upload site
-        uses: actions/upload-pages-artifact@v2
+        # FIX: Update to v3 of upload-pages-artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: . # This specifies the path to your static site files
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
