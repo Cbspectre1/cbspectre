@@ -451,5 +451,30 @@ width: 100%;
 .evidence-photo img {
   transform: rotate(0deg);
 }
+/* ───────────────────────────────
+   ALL OF THEM TEASER – RED ALERT BOX
+   Used for the sequel teaser section
+   .classified-warning.red-alert
+──────────────────────────────── */
+
+.classified-warning.red-alert {
+  border: 3px dashed darkred;
+  background-color: #fff5f5; /* pale red background */
+  box-shadow: 0 0 12px rgba(139, 0, 0, 0.3);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.classified-warning.red-alert h2,
+.classified-warning.red-alert h3 {
+  color: darkred;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+
+.classified-warning.red-alert h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
 
 }
