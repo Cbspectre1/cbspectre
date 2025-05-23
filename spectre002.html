@@ -22,6 +22,13 @@
 <a href="spectre002.html" class="tab active-tab">SPECTRE002</a>
 </nav>
 
+<div class="typewriter-container" id="lockscreen">
+  <div id="typewriter-text"></div>
+  <input type="password" id="password-input" placeholder="Enter access code" style="display: none;" />
+  <button id="submit-btn" style="display: none;">Unlock</button>
+  <p id="error-msg" style="color: crimson; display: none;">Incorrect. Try again.</p>
+</div>
+
   <div class="wrapper">
     <div class="dossier-header">
       <h1>DEPARTMENT OF JUSTICE</h1>
@@ -145,5 +152,56 @@ Controlled entirely by Spectre’s design. No escape observed.</p>
       &copy; 2025 C. B. Spectre. Case file archived. Awaiting further intel.
     </div>
   </div>
+
+
+  <!-- 🔐 MAGIC TYPEWRITER PASSWORD LOGIC -->
+  <script>
+    const message = 
+  "██ ██ ██ ███████\n" +
+  "ACCESSING CLASSIFIED DOSSIER: SPECTRE-002\n\n" +
+  "You think you're clever, do ya?\n" +
+  "Clickin’ around where you don’t belong...\n\n" +
+  "That wasn’t an invite, sweetheart.\n" +
+  "That was bait.\n\n" +
+  "You’re not supposed to be here.\n" +
+  "But since you're so bloody *curious*...\n\n" +
+  "Let’s see if you’ve got the spine to go deeper.\n" +
+  "Enter the code. Or piss off back to the shallow end.\n";
+    const typewriter = document.getElementById("typewriter-text");
+    const passwordInput = document.getElementById("password-input");
+    const submitBtn = document.getElementById("submit-btn");
+    const errorMsg = document.getElementById("error-msg");
+    const correctPassword = "stabbydaddy"; // 👈 Set your real code here
+
+    let index = 0;
+
+    function typeEffect() {
+      if (index < message.length) {
+        typewriter.textContent += message.charAt(index);
+        index++;
+        setTimeout(typeEffect, 50);
+      } else {
+        passwordInput.style.display = "block";
+        submitBtn.style.display = "block";
+      }
+    }
+
+    submitBtn.addEventListener("click", () => {
+      const input = passwordInput.value.toLowerCase().trim();
+      if (input === correctPassword) {
+        document.getElementById("lockscreen").style.display = "none";
+        document.querySelector(".wrapper").style.display = "block";
+      } else {
+        errorMsg.style.display = "block";
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".wrapper").style.display = "none";
+      typeEffect();
+    });
+  </script>
+
 </body>
 </html>
+
