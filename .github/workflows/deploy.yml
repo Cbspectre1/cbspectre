@@ -20,10 +20,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build site
+        run: |
+          npm run build
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: . # Ensure this path is correct for your static site's output
+          path: ./dist  # or ./build or whatever your output dir is
 
       - name: Deploy to GitHub Pages
         id: deployment
