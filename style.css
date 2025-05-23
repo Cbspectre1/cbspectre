@@ -329,7 +329,7 @@ body::before {
   body {
     font-size: 0.9rem;
     padding: 10px;
-    background-size: cover; !important;
+    background-size: cover
     background-position: top center;
     width: 100%;
     max-width: 100%;
