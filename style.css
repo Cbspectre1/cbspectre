@@ -39,7 +39,7 @@ body::before {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-image: url('images/reportpaper.jpg');
+  background-image: url('images/reportpaper.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -329,7 +329,7 @@ body::before {
   body {
     font-size: 0.9rem;
     padding: 10px;
-    background-size: auto;
+    background-size: cover; !important;
     background-position: top center;
     width: 100%;
     max-width: 100%;
