@@ -554,16 +554,16 @@ body::before {
 }
 
 #error-msg {
-  color: #111 !important;  /* pure deep black */
+  color: #ff0000 !important;  /* bright red */
   font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   margin-top: 15px;
   text-align: center;
   letter-spacing: 0.2px;
 }
 .dossier-text {
   min-height: 370px;    /* Keeps the box from shrinking as it types */
-  min-width: 420px;
+  min-width: 450px;
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 1.18rem !important;
   color: #131313 !important;
