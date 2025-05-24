@@ -454,7 +454,22 @@ body::before {
   .evidence-photo img {
     transform: rotate(0deg);
   }
+.dossier-text {
+    width: 99vw;
+    min-width: 0;
+    max-width: 99vw;
+    font-size: 1rem;
+    padding: 1.1em 0.7em 1em 0.7em;
+  }
+
+  .lockscreen-controls {
+    width: 98vw;
+    min-width: 0;
+    max-width: 99vw;
+    padding: 18px 6px 10px 6px;
+  }
 }
+
 
 /* ───────────────────────────────
    ALL OF THEM TEASER – RED ALERT BOX
@@ -554,16 +569,23 @@ body::before {
 }
 
 #error-msg {
-  color: #ff0000 !important;  /* bright red */
+  color: darkred !important;
   font-weight: bold;
-  font-size: 1.25rem;
-  margin-top: 15px;
+  font-size: 1.07rem;
+  margin-top: 13px;
   text-align: center;
   letter-spacing: 0.2px;
+  background: rgba(255,230,230,0.75);
+  border-radius: 5px;
+  padding: 5px 12px;
+  width: 100%;
 }
+
 .dossier-text {
-  min-height: 370px;    /* Keeps the box from shrinking as it types */
-  min-width: 450px;
+  width: 480px;
+  max-width: 95vw;
+  min-width: 260px; /* Minimum width for phones */
+  min-height: 370px;
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 1.18rem !important;
   color: #131313 !important;
@@ -578,6 +600,22 @@ body::before {
   box-shadow: 0 3px 18px 0 #0002 !important;
   margin: 2.2em auto 0 auto !important;
   letter-spacing: 0.047em !important;
-  max-width: 95vw;
   text-align: center;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+.lockscreen-controls {
+  background: rgba(255, 255, 230, 0.90);
+  border-radius: 11px;
+  box-shadow: 0 2px 10px #0002;
+  padding: 24px 18px 18px 18px;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 290px;
+  max-width: 95vw;
+  width: 350px;
+}
+
 }
