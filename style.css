@@ -562,6 +562,8 @@ body::before {
   letter-spacing: 0.2px;
 }
 .dossier-text {
+  min-height: 370px;    /* Keeps the box from shrinking as it types */
+  min-width: 420px;
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 1.18rem !important;
   color: #131313 !important;
