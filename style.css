@@ -534,3 +534,11 @@ body::before {
 #submit-btn:hover {
   background: crimson;
 }
+#error-msg {
+  color: #111 !important;  /* pure deep black */
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
