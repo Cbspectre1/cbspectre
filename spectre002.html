@@ -18,19 +18,23 @@
 
 <body>
 
-<!-- ░░░ NAVIGATION TABS FOR PAGE 1 & PAGE 2 (SPECTRE001 and SPECTRE002) ░░░ -->
+
+<!-- ░░░ NAVIGATION TABS ░░░ -->
 <nav class="dossier-tabs">
- <a href="index.html" class="tab">SPECTRE001</a>
-<a href="spectre002.html" class="tab active-tab">SPECTRE002</a>
+  <a href="index.html" class="tab">SPECTRE001</a>
+  <a href="spectre002.html" class="tab active-tab">SPECTRE002</a>
 </nav>
 
+<!-- LOCKSCREEN (typewriter and password box) -->
 <div class="typewriter-container" id="lockscreen">
-<div id="typewriter-text" class="dossier-text"></div>
-  <input type="password" id="password-input" placeholder="Enter access code" style="display: none;" />
-  <button id="submit-btn" style="display: none;">Unlock</button>
-<p id="error-msg" style="color: #111; display: none;"></p>
-
+  <div id="typewriter-text" class="dossier-text"></div>
+  <div class="lockscreen-controls">
+    <input type="password" id="password-input" placeholder="Enter access code" style="display: none;" />
+    <button id="submit-btn" style="display: none;">Unlock</button>
+    <p id="error-msg" style="color: #111; display: none;"></p>
+  </div>
 </div>
+
 
   <div class="wrapper">
     <div class="dossier-header">
