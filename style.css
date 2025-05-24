@@ -1,3 +1,5 @@
+STYLE.CSS
+
 /* Global Styles */
 
 body {
@@ -39,22 +41,18 @@ body::before {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-
-  background-image: url('images/reportpaper.jpg');
+  background-image: url('images/reportpaper.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  background-color: rgba(255, 248, 235, 0.9); /* pale base tint */
-  background-blend-mode: lighten;
-
+  background-color: rgba(245, 235, 210, 0.95);
+  background-blend-mode: overlay;
   border: 2px solid #5a3e2b;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 60px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 1;
   padding-bottom: 150px;
 }
-
 
 .wrapper::after {
   content: "";
@@ -500,7 +498,7 @@ body::before {
 #typewriter-text {
   font-family: 'Courier New', monospace;
   color: black;
-  font-size: 5rem;
+  font-size: 3rem;
   white-space: pre-line;
   padding: 40px 25px;
   text-align: center;
