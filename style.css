@@ -497,8 +497,8 @@ body::before {
 ──────────────────────────────── */
 #typewriter-text {
   font-family: 'Courier New', monospace;
-  color: black;
-  font-size: 3rem;
+  color: crimson;
+  font-size: 1rem;
   white-space: pre-line;
   padding: 40px 25px;
   text-align: center;
