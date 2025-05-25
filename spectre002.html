@@ -185,7 +185,9 @@ const errorMessages = [
 ];
 
 const message = "\n\n" +
-  "██ ██ ███ ████ █████ ██████ ███████\n" +
+  "██ Protocol ██ Lockdown ███ ████\n" +
+   "Location ██████████████ \n" +
+   "Identity detected: ██████ █████████\n" +
   "Warning: Unauthorized access attempt detected.\n\n" +
   "This file is restricted to authorised personnel only.\n" +
   "Your activity has been logged (but don’t worry, nobody actually reads those logs).\n" +
@@ -209,10 +211,12 @@ function typeEffect() {
   if (index < message.length) {
     typewriter.textContent += message.charAt(index);
     index++;
-    setTimeout(typeEffect, 50);
+    setTimeout(typeEffect, 32); // a bit faster (change if you want)
   } else {
-    passwordInput.style.display = "block";
-    submitBtn.style.display = "block";
+    setTimeout(() => {
+      passwordInput.style.display = "block";
+      submitBtn.style.display = "block";
+    }, 400); // 0.4 second pause after typing ends
   }
 }
 
