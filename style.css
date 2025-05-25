@@ -70,7 +70,7 @@ body::before {
 
 .dossier-text {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px; /* makes the box around the writing longer */
   min-height: 320px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.12rem;
