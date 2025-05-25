@@ -83,9 +83,10 @@ box-shadow: 0 0 12px rgba(139, 0, 0, 0.3);">
     &copy; 2025 C. B. Spectre. Case file archived. Awaiting further intel.
   </div>
 </div>
-
+<!-- ===================================================
+     JAVASCRIPT: LOCKSCREEN TYPEWRITER + PASSWORD LOGIC
+     =================================================== -->
 <script>
-// Funny error messages for failed attempts
 const errorMessages = [
   "This is your only warning.<br>Keep poking around and I'll hide in your closet. Just kidding, I'm too tall for that.",
   "This is your only warning.<br>Keep snooping and I’ll hide under your bed. Please stack snacks, and if you snore, I’m outta here.",
@@ -101,7 +102,6 @@ const errorMessages = [
   "This is your only warning.<br>One more wrong move and I’ll send Monks to rearrange your furniture. Naked. At 2AM. He’ll play “Careless Whisper” on the accordion. No survivors."
 ];
 
-// Typewriter text. ONLY use \n for line breaks!
 const message = `
 ⚠️🚨 Protocol Lockdown 🚨⚠️
 ⚠️🚨👻 Certified Spectre Detected 👻🚨⚠️
@@ -140,11 +140,12 @@ function typeEffect() {
     setTimeout(typeEffect, 32); // Adjust speed as needed
   } else {
     setTimeout(() => {
-      passwordInput.style.display = "block";
-      submitBtn.style.display = "block";
+      const controls = document.querySelector('.lockscreen-controls');
+      controls.style.display = 'flex';
+      setTimeout(() => { controls.style.opacity = '1'; }, 10); // smooth fade in
     }, 400); // Pause after typing ends
   }
-}
+} // <--- YOU WERE MISSING THIS BRACKET
 
 submitBtn.addEventListener("click", () => {
   const input = passwordInput.value.toLowerCase().trim();
@@ -171,5 +172,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-</body>
-</html>
