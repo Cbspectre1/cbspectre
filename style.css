@@ -96,20 +96,21 @@ body::before {
 }
 
 /* Controls below the message: password field, button, error msg */
+/* Main/global styles (outside media queries): */
 .lockscreen-controls {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(.6,-0.18,.56,1.21);
   width: 100%;
   max-width: 1000px;
   background: rgba(255,255,240,0.97);
   border-radius: 0 0 15px 15px;
   box-shadow: 0 2px 10px #0001;
   margin: 0 auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 22px 18px 18px 18px;
   box-sizing: border-box;
-  /* If you want it **fixed** to bottom, uncomment below: */
-  /* position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; */
 }
 
 /* Password input and submit button (shared styles) */
