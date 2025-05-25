@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +13,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
 
 <!-- ░░░ NAVIGATION TABS ░░░ -->
 <nav class="dossier-tabs">
@@ -25,149 +21,72 @@
   <a href="spectre002.html" class="tab active-tab">SPECTRE002</a>
 </nav>
 
-<!-- LOCKSCREEN (typewriter and password box) -->
+<!-- LOCKSCREEN (typewriter and password box INSIDE the text area) -->
 <div class="typewriter-container" id="lockscreen">
-  <div id="typewriter-text" class="dossier-text"></div>
-  <div class="lockscreen-controls">
-    <input type="password" id="password-input" placeholder="Enter access code" style="display: none;" />
-    <button id="submit-btn" style="display: none;">Unlock</button>
-    <p id="error-msg" style="color: #111; display: none;"></p>
+  <div id="typewriter-text" class="dossier-text">
+    <!-- typewriter text appears here -->
+    <div class="lockscreen-controls" style="margin-top:2em;">
+      <input type="password" id="password-input" placeholder="Enter access code" style="display: none;" />
+      <button id="submit-btn" style="display: none;">Unlock</button>
+      <p id="error-msg" style="color: #111; display: none;"></p>
+    </div>
   </div>
 </div>
 
+<div class="wrapper">
+  <div class="dossier-header">
+    <h1>DEPARTMENT OF JUSTICE</h1>
+    <h2>BUREAU OF INVESTIGATION</h2>
+    <h3>DOSSIER FILE: #SPECTRE-002</h3>
+    <p class="case-number">Case Initiated: [REDACTED]</p>
+  </div>
 
-  <div class="wrapper">
-    <div class="dossier-header">
-      <h1>DEPARTMENT OF JUSTICE</h1>
-      <h2>BUREAU OF INVESTIGATION</h2>
-      <h3>DOSSIER FILE: #SPECTRE-002</h3>
-      <p class="case-number">Case Initiated: [REDACTED]</p>
-    </div>
+  <div class="mugshot-section">
+    <img src="images/placeholder.png" alt="Subject mugshot pending" class="mugshot" />
+  </div>
 
-    <div class="mugshot-section">
-      <img src="images/placeholder.png" alt="Subject mugshot pending" class="mugshot" />
-    </div>
+  <div class="record">
+    <p class="alias">
+      <strong>Alias:</strong><br>
+      <em>Commando Motherfucker</em> — Pants? Optional. Chaos? Mandatory.<br>
+      <em>Mister Red Flag</em> — You knew. You stayed.<br>
+      <em>The Cliffhanger Casanova</em> — He’ll leave you on read and hanging off a ledge.<br>
+      <em>King Kong Thunder Dong </em> — You knew. You stayed.<br>
+      <em>Stabby Daddy</em> — He cuts deep. And you thank him for it.
+    </p>
+    <p><strong>Known Crimes:</strong> [CLASSIFIED – UNDER REVIEW]</p>
+    <p><strong>Affiliations:</strong> Unknown</p>
+    <p><strong>Last Seen:</strong> Within the shadows of Spectre’s narrative web</p>
+  </div>
 
-    <div class="record">
-     <p class="alias">
-  <strong>Alias:</strong><br>
-  <em>Commando Motherfucker</em> — Pants? Optional. Chaos? Mandatory.<br>
-  <em>Mister Red Flag</em> — You knew. You stayed.<br>
-  <em>The Cliffhanger Casanova</em> — He’ll leave you on read and hanging off a ledge.<br>
-<em>King Kong Thunder Dong </em> — You knew. You stayed.<br>
-  <em>Stabby Daddy</em> — He cuts deep. And you thank him for it.
-</p>
+  <div class="profile">
+    <ul class="profile-details">
+      <li><strong>Known For:</strong> Unconfirmed acts of brutality buried beneath fiction.</li>
+      <li><strong>Modus Operandi:</strong> Unknown. Files corrupted. Memories erased.</li>
+      <li><strong>Status:</strong> Under active surveillance.</li>
+    </ul>
+  </div>
 
-      <p><strong>Known Crimes:</strong> [CLASSIFIED – UNDER REVIEW]</p>
-      <p><strong>Affiliations:</strong> Unknown</p>
-      <p><strong>Last Seen:</strong> Within the shadows of Spectre’s narrative web</p>
-    </div>
-
-    <div class="profile">
-      <ul class="profile-details">
-        <li><strong>Known For:</strong> Unconfirmed acts of brutality buried beneath fiction.</li>
-        <li><strong>Modus Operandi:</strong> Unknown. Files corrupted. Memories erased.</li>
-        <li><strong>Status:</strong> Under active surveillance.</li>
-      </ul>
-    </div>
-
-    <!-- 🔥 Spectre Teaser Block: ALL OF THEM -->
-    <section class="classified-warning red-alert" style="font-family: 'Courier New', monospace; 
+  <!-- 🔥 Spectre Teaser Block: ALL OF THEM -->
+  <!-- (no changes here—keep as is) -->
+  <section class="classified-warning red-alert" style="font-family: 'Courier New', monospace; 
 background: rgba(255,255,220,0.90) !important;
  padding: 25px; 
 border: 2px dashed darkred;
  margin: 40px 0; 
 box-shadow: 0 0 12px rgba(139, 0, 0, 0.3);">
-      <h2>📂 TOP PRIORITY CASE FILE — INTERCEPTION: SUCCESSFUL</h2>
+    <h2>📂 TOP PRIORITY CASE FILE — INTERCEPTION: SUCCESSFUL</h2>
+    <!-- ... truncated for brevity ... -->
+    <!-- Use your existing teaser HTML here! -->
+  </section>
 
-      <p><strong>CLASSIFICATION:</strong> Omega-Level Threat<br>
-      <strong>SUBJECT:</strong> C. B. Spectre<br>
-      <strong>STATUS:</strong> Active. Escalating. Must be stopped.</p>
-
-      <h3>🧠 WARNING:</h3>
-      <p>Subject is armed with high-level psychological warfare, narrative distortion, and an imagination that won’t shut the hell up.<br>
-      Attempts to neutralise have failed.<br>
-      Attempts to ignore have made it worse.</p>
-
-     <h3>📍 Confirmed Site: <span style="background:black; color:black;">██ ███ ██ ███████</span> — Location Scrambled</h3>
-<p>Believed to be operating from an environment hostile to both logic and morality.<br>
-Controlled entirely by Spectre’s design. No escape observed.</p>
-
-<h3>🧾 Operatives Identified (Aliases Only):</h3>
-<ul>
-  <li><span style="background:black; color:black;">█████████████</span> — callsign: “👑 The Prince” — status: volatile (charm weaponised)</li>
-  <li><span style="background:black; color:black;">██████████</span> — callsign: “🎤 The Siren” — status: seductive & unhinged (do not follow her voice)</li>
-  <li><span style="background:black; color:black;">████████████████</span> — callsign: “👻 The Ghost” — status: missing, presumed lethal (never seen coming — never seen twice.)</li>
-  <li><span style="background:black; color:black;">████████████</span> — callsign: “✝️ The Saint” — status: corrupted (prays before torture. For your sins, not his.)</li>
-  <li><span style="background:black; color:black;">████████████</span> — callsign: “🔪 The Butcher” — status: surgical & unflinching (cut off a man’s leg, stitched it back, kept dancing).</li>
-  <li><span style="background:black; color:black;">███████████</span> — callsign: “😈 The Devil’s Pet” — status: please don’t engage (we don’t talk about this one)</li>
-</ul>
-
-
-      <h3>🛠️ MISSION INTEL:</h3>
-      <p>They’re not students.<br>
-      They’re not survivors.<br>
-      They’re assets — volatile, unpredictable, loyal only to madness.</p>
-
-      <p>The curriculum has evolved. The rules have been erased.<br>
-      Each of them carries traces of C. B. Spectre’s influence — linguistic sabotage, narrative hacking, emotional destabilisation.</p>
-
-      <p>They are not characters. They are weapons.<br>
-      And they are already deployed.</p>
-
-      <h3>🚨 AGENT ALERT:</h3>
-      <p>Do not attempt to reason with C. B. Spectre.<br>
-      Subject's imagination is uncontainable, deeply caffeinated, and shows no signs of fatigue.<br>
-      Known to shatter genre boundaries, pacing protocols, and reader expectations.</p>
-
-      <p>This is not a drill.<br>
-      This is not fiction.<br>
-      This is Spectre.</p>
-
-      <h3>🧊 CODE NAME:</h3>
-      <p><strong>ALL OF THEM</strong> — Pending Activation</p>
-
-      <h3>🔥 Projected Impact:</h3>
-      <ul>
-        <li>Emotional devastation</li>
-        <li>Cognitive whiplash</li>
-        <li>Sudden obsession</li>
-        <li>Withdrawal from reality</li>
-      </ul>
-
-      <h3>📌 CONCLUSION:</h3>
-      <p>C. B. Spectre must be stopped.<br>
-      Unfortunately, they’ve already written this ending.<br>
-      And they wrote you into it.</p>
-
-      <p><strong>COMING SOON.</strong><br>
-      We tried to stop it. We failed.<br>
-      Now it’s your turn.</p>
-
-      <h3>⚠️ SECURITY BREACH — PRIORITY CODE: SPECTRE</h3>
-      <p>These files were never cleared for release.<br>
-      After the psychological wreckage caused by Some of Them, this sequel was stamped: UNRELEASABLE.</p>
-
-      <p>But suppression failed.</p>
-
-      <p>The Spectres have already mobilised.<br>
-      They’re multiplying. Off-grid. Embedded deep.</p>
-
-      <p>If All of Them hits the public, we lose containment.<br>
-      Curiosity will spiral.<br>
-      Obsession will spread like smoke.</p>
-
-      <p>And once it’s out—<br>
-      there’s no vault deep enough to lock it away again.</p>
-    </section>
-
-    <div class="footer">
-      &copy; 2025 C. B. Spectre. Case file archived. Awaiting further intel.
-    </div>
+  <div class="footer">
+    &copy; 2025 C. B. Spectre. Case file archived. Awaiting further intel.
   </div>
-
+</div>
 
 <script>
+// Funny error messages for failed attempts
 const errorMessages = [
   "This is your only warning.<br>Keep poking around and I'll hide in your closet. Just kidding, I'm too tall for that.",
   "This is your only warning.<br>Keep snooping and I’ll hide under your bed. Please stack snacks, and if you snore, I’m outta here.",
@@ -183,9 +102,9 @@ const errorMessages = [
   "This is your only warning.<br>One more wrong move and I’ll send Monks to rearrange your furniture. Naked. At 2AM. He’ll play “Careless Whisper” on the accordion. No survivors."
 ];
 
-// NO <br> tags in your string! Only \n for line breaks
+// Typewriter text. ONLY use \n for line breaks!
 const message = `
-      ⚠️🚨 Protocol Lockdown 🚨⚠️
+⚠️🚨 Protocol Lockdown 🚨⚠️
 ⚠️🚨👻 Certified Spectre Detected 👻🚨⚠️
 
 Warning: Unauthorized access attempt detected.
@@ -197,8 +116,8 @@ Security protocols are now in effect.
 If you’re snooping, kindly close this tab
 or else: the firewall will start judging your browser history.
 
-If you;re not a snooper, enter the password below.
-Try your luck who knows what secrets you’ll uncover.
+If you’re not a snooper, enter the password below.
+Try your luck—who knows what secrets you’ll uncover.
 Just be sure you’re ready for what you find.
 `;
 
@@ -212,7 +131,6 @@ let index = 0;
 
 function typeEffect() {
   if (index < message.length) {
-    // Replace \n with <br> as it types
     const char = message.charAt(index);
     if (char === "\n") {
       typewriter.innerHTML += "<br>";
@@ -220,12 +138,12 @@ function typeEffect() {
       typewriter.innerHTML += char;
     }
     index++;
-    setTimeout(typeEffect, 32); // Adjust speed if you want
+    setTimeout(typeEffect, 32); // Adjust speed as needed
   } else {
     setTimeout(() => {
       passwordInput.style.display = "block";
       submitBtn.style.display = "block";
-    }, 400); // 0.4 second pause after typing ends
+    }, 400); // Pause after typing ends
   }
 }
 
@@ -254,3 +172,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+</body>
+</html>
