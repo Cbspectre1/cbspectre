@@ -167,8 +167,7 @@ Controlled entirely by Spectre’s design. No escape observed.</p>
   </div>
 
 
-  <!-- 🔐 MAGIC TYPEWRITER PASSWORD LOGIC -->
-  <script>
+<script>
 const errorMessages = [
   "This is your only warning.<br>Keep poking around and I'll hide in your closet. Just kidding, I'm too tall for that.",
   "This is your only warning.<br>Keep snooping and I’ll hide under your bed. Please stack snacks, and if you snore, I’m outta here.",
@@ -184,22 +183,26 @@ const errorMessages = [
   "This is your only warning.<br>One more wrong move and I’ll send Monks to rearrange your furniture. Naked. At 2AM. He’ll play “Careless Whisper” on the accordion. No survivors."
 ];
 
+// NO <br> tags in your string! Only \n for line breaks
 const message = `
-██ Protocol Lockdown ███ ████<br>
-██ Certified Spectre Detected ██<br>
-Location: ██████████████<br>
-Identity Match Found: ██████ █████████<br>
-Warning: Unauthorized access attempt detected.<br><br>
-This file is restricted to authorised personnel only.<br>
-Your activity has been logged (but don’t worry, nobody actually reads those logs).<br>
-Security protocols are now in effect.<br><br>
-If you’re not meant to be here, kindly close this tab<br>
-before the firewall starts judging your browser history.<br><br>
-Otherwise, enter the password below.<br>
-Try your luck—who knows what secrets you’ll uncover.<br>
-Just be sure you’re ready for what you find.<br>
-`;
+██ Protocol Lockdown ███ ████
+██ Certified Spectre Detected ██
+Location: ██████████████
+Identity Match Found: ██████ █████████
 
+Warning: Unauthorized access attempt detected.
+
+This file is restricted to authorised personnel only.
+Your activity has been logged (but don’t worry, nobody actually reads those logs).
+Security protocols are now in effect.
+
+If you’re not meant to be here, kindly close this tab
+before the firewall starts judging your browser history.
+
+Otherwise, enter the password below.
+Try your luck—who knows what secrets you’ll uncover.
+Just be sure you’re ready for what you find.
+`;
 
 const typewriter = document.getElementById("typewriter-text");
 const passwordInput = document.getElementById("password-input");
@@ -211,9 +214,15 @@ let index = 0;
 
 function typeEffect() {
   if (index < message.length) {
-typewriter.innerHTML += message.charAt(index);
+    // Replace \n with <br> as it types
+    const char = message.charAt(index);
+    if (char === "\n") {
+      typewriter.innerHTML += "<br>";
+    } else {
+      typewriter.innerHTML += char;
+    }
     index++;
-    setTimeout(typeEffect, 32); // a bit faster (change if you want)
+    setTimeout(typeEffect, 32); // Adjust speed if you want
   } else {
     setTimeout(() => {
       passwordInput.style.display = "block";
@@ -245,8 +254,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".wrapper").style.display = "none";
   typeEffect();
 });
+</script>
 
-  </script>
-
-</body>
-</html>
