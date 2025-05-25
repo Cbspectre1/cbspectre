@@ -388,7 +388,7 @@ body::before {
 }
 
 /* Responsive Styles for Phones (max-width: 760px) */
-@media (max-width: 760px) {
+@media (max-width: 730px) {
   body {
     font-size: 0.9rem;
     padding: 10px;
