@@ -2,6 +2,7 @@
    GLOBAL STYLES
    =================================================== */
 body {
+ overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -71,7 +72,7 @@ body::before {
   justify-content: flex-start;
   min-height: 100vh;
   height: auto;   /* <--- WAS 150vh */
-  width: 100vw;
+  /* width: 100vw; */ --- side scrolling cunt
   box-sizing: border-box;
   background: transparent;
   position: relative;
@@ -466,15 +467,15 @@ body::before {
    =================================================== */
 
 @media (max-width: 630px) {
-  body {
+body {
+    overflow-x: hidden;
     font-size: 0.9rem;
     padding: 10px;
     background-size: cover;
     background-position: top center;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+    /* width: 100%;     <-- REMOVE */
+    /* max-width: 100%; <-- REMOVE */
+ }
   .wrapper {
     width: 100%;
     max-width: 100%;
@@ -485,7 +486,7 @@ body::before {
   .typewriter-container {
     min-height: 92vh;
     height: 100vh;
-    width: 100vw;
+     /* width: 100vw; */ --- side scrolling cunt
     padding: 0;
     overflow-x: hidden;
     justify-content: flex-start;
