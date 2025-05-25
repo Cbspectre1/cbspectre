@@ -211,7 +211,7 @@ let index = 0;
 
 function typeEffect() {
   if (index < message.length) {
-    typewriter.textContent += message.charAt(index);
+typewriter.innerHTML += message.charAt(index);
     index++;
     setTimeout(typeEffect, 32); // a bit faster (change if you want)
   } else {
