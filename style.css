@@ -1,5 +1,4 @@
 /* Global Styles */
-
 body {
   margin: 0;
   padding: 0;
@@ -16,18 +15,12 @@ body {
   position: relative;
   opacity: 1;
 }
-
-body.loaded {
-  opacity: 1;
-}
-
+body.loaded { opacity: 1; }
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
   background: rgba(255, 235, 185, 0.15);
   z-index: 0;
   pointer-events: none;
@@ -39,516 +32,35 @@ body::before {
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
-  background-image: url('images/reportpaper.jpg'); 
+  background-image: url('images/reportpaper.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(245, 235, 210, 0.95);
   background-blend-mode: overlay;
   border: 2px solid #5a3e2b;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 60px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3), inset 0 0 60px rgba(0,0,0,0.05);
   position: relative;
   z-index: 1;
   padding-bottom: 150px;
 }
-
 .wrapper::after {
   content: "";
   position: absolute;
-  top: -15px;
-  left: -15px;
-  right: -15px;
-  bottom: -15px;
+  top: -15px; left: -15px; right: -15px; bottom: -15px;
   background: url('https://www.transparenttextures.com/patterns/old-wall.png');
   opacity: 0.15;
   z-index: -1;
   pointer-events: none;
 }
 
-/* Header Section */
-.dossier-header {
-  text-align: center;
-  border-bottom: 2px solid #555;
-  padding-bottom: 15px;
-  margin-bottom: 30px;
-}
-
-.dossier-header h1,
-.dossier-header h2 {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  color: #444;
-}
-
-.dossier-header h3 {
-  font-size: 2.2rem;
-  color: darkred;
-  margin: 10px 0;
-}
-
-.case-number {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-/* Mugshot Section */
-.mugshot-section {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-bottom: 35px;
-}
-
-.mugshot {
-  width: 400px;
-  height: auto;
-  border: 4px double #444;
-  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
-  filter: sepia(0.25) contrast(0.85);
-  transform: rotate(1deg);
-}
-
-.mugshot:last-child {
-  transform: rotate(-1deg);
-}
-
-/* Profile & Records */
-.profile {
-  margin-bottom: 35px;
-  padding: 15px;
-  border-left: 3px solid #888;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.profile-details li {
-  margin-bottom: 8px;
-  color: #555;
-}
-
-.record p:first-child,
-.alias {
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  color: #333;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px 15px;
-  border-left: 4px solid crimson;
-  border-radius: 4px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-}
-
-.stamp {
-  display: inline-block;
-  font-family: 'Stardos Stencil', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  color: red;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border: 4px solid red;
-  padding: 8px 18px;
-  border-radius: 3px;
-  transform: translate(-50%, -50%) rotate(-12deg);
-  background-color: transparent;
-  box-shadow: none;
-  text-shadow: none;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Table Styling */
-.history-table-wrapper {
-  overflow-x: auto;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-.history-table {
-  width: 100%;
-  min-width: 700px;
-  border-collapse: collapse;
-  margin-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.history-table th,
-.history-table td {
-  border: 1px solid #777;
-  padding: 8px;
-  text-align: left;
-  font-size: 0.95rem;
-  font-family: 'Courier', monospace;
-  background-color: #fcf8ec;
-  color: #2c2c2c;
-}
-
-.history-table thead th {
-  background-color: #ddd;
-  font-weight: bold;
-  color: #333;
-}
-
-.history-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-/* Contact */
-.contact-info {
-  margin-bottom: 30px;
-  padding: 15px;
-  border-left: 3px solid #888;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.contact-info h2 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #333;
-  border-bottom: 1px dashed #777;
-  padding-bottom: 5px;
-}
-
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-info li {
-  margin-bottom: 10px;
-}
-
-.contact-info a {
-  color: darkblue;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  font-size: 0.85rem;
-  margin-top: 40px;
-  color: #777;
-  border-top: 1px dashed #888;
-  padding-top: 10px;
-}
-
-/* Nav (currently hidden) */
-.fingerprint-nav {
-  display: none !important;
-}
-.classified-warning {
-  background: rgba(255, 248, 235, 0.9);
-  border: 2px dashed darkred;
-  padding: 20px 25px;
-  margin: 40px auto;
-  max-width: 750px;
-  font-family: 'Courier New', Courier, monospace;
-  color: #2c2c2c;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.classified-warning h2,
-.classified-warning h3 {
-  color: darkred;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 20px;
-}
-
-.classified-warning ul {
-  padding-left: 20px;
-  margin: 15px 0;
-}
-
-.classified-warning li {
-  margin-bottom: 6px;
-}
-
-.classified-warning a {
-  color: #111;
-  text-decoration: underline;
-}
-
-.classified-warning a:hover {
-  color: red;
-}
-
-.evidence-photo {
-  float: right;
-  margin: 10px 0 20px 30px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.evidence-photo img {
-  width: 100%;
-  border: 2px solid #444;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  transform: rotate(2deg);
-}
-
-.exhibit-label {
-  font-size: 0.85rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 5px 0 0;
-  color: darkred;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.caption {
-  font-size: 0.75rem;
-  font-family: 'Courier New', Courier, monospace;
-  color: #555;
-  margin-top: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-
-/* Responsive Styles for Phones (max-width: 600px) */
-@media (max-width: 760px) {
-  body {
-    font-size: 0.9rem;
-    padding: 10px;
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .wrapper {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  img, table {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  * {
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-
-  .dossier-header h1 {
-    font-size: 1rem;
-  }
-
-  .dossier-header h2 {
-    font-size: 0.9rem;
-  }
-
-  .dossier-header h3 {
-    font-size: 1.8rem;
-  }
-
-  .mugshot-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
-  }
-
-  .mugshot {
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .record p:first-child,
-  .alias {
-    font-size: 1rem;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-
-  .profile {
-    padding: 10px;
-    margin-bottom: 25px;
-  }
-
-  .profile-details li {
-    margin-bottom: 6px;
-  }
-
-  .history-table-wrapper {
-    position: relative;
-  }
-
-  .history-table-wrapper .stamp {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    transform: rotate(-12deg);
-    font-size: 22px;
-    padding: 6px 14px;
-    border-width: 3px;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  .history-table th,
-  .history-table td {
-    font-size: 0.8rem;
-    padding: 6px;
-  }
-
-  .contact-info h2 {
-    font-size: 1.1rem;
-  }
-
-  .contact-info li {
-    margin-bottom: 8px;
-  }
-
-  .footer {
-    font-size: 0.75rem;
-    margin-top: 30px;
-    padding-top: 8px;
-  }
-
-  .stamp {
-    top: 20px;
-    left: 10px;
-    transform: rotate(-10deg);
-    font-size: 18px;
-    padding: 4px 10px;
-    border-width: 2px;
-    z-index: 2;
-  }
-
-  .evidence-photo {
-    float: none;
-    margin: 20px auto;
-    max-width: 80%;
-    display: block;
-  }
-
-.evidence-photo img {
-    transform: rotate(0deg);
-} /* <-- CLOSE HERE */
-
-
-.typewriter-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 92vh; /* Or 100vh */
-  height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  background: transparent;
-  position: relative;
-  overflow-x: hidden;
-}
-
-.dossier-text {
-  width: 96vw;
-  max-width: 500px;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 2em 1.2em 1em 1.2em;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.lockscreen-controls {
-  width: 96vw;
-  max-width: 420px;
-  margin: 36px auto 26px auto;
-  background: rgba(255,255,240,0.97);
-  border-radius: 15px;
-  box-shadow: 0 2px 10px #0001;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 2vw 17px 2vw;
-  box-sizing: border-box;
-}
-
-
-/* ───────────────────────────────
-   ALL OF THEM TEASER – RED ALERT BOX
-   Used for the sequel teaser section
-   .classified-warning.red-alert
-──────────────────────────────── */
-.classified-warning.red-alert {
-  border: 3px dashed darkred;
-  background-color: #fff5f5; /* pale red background */
-  box-shadow: 0 0 12px rgba(139, 0, 0, 0.3);
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.classified-warning.red-alert h2,
-.classified-warning.red-alert h3 {
-  color: darkred;
-  font-weight: bold;
-  letter-spacing: 0.6px;
-}
-
-.classified-warning.red-alert h3 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin-top: 15px;
-}
-
-/* ───────────────────────────────
-   ACTIVE TAB STYLE FOR SPECTRE NAV
-──────────────────────────────── */
-.tab.active-tab {
-  background-color: #e9d8b7;
-  color: black;
-  font-weight: bold;
-  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2);
-}
-/* ───────────────────────────────
-   LOCKSCREEN / TYPEWRITER ENTRY
-──────────────────────────────── */
-#typewriter-text {
-  font-family: 'Courier New', monospace;
-  color: #111;
-  font-size: 1.2rem;
-  white-space: pre-line;
-  padding: 50px 35px;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
+/* LOCKSCREEN / TYPEWRITER ENTRY */
 .typewriter-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Spread typewriter + controls */
-  min-height: 82vh; /* or whatever feels right, forces a tall enough lockscreen */
+  justify-content: flex-start; /* stops the controls moving down as the message grows */
+  min-height: 82vh;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
@@ -563,12 +75,13 @@ body::before {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.12rem;
   color: #222;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   background: rgba(255,255,230,0.66);
   border-radius: 15px;
   padding: 2em 1.2em 1em 1.2em;
   text-align: center;
   box-shadow: 0 2px 12px #0001;
+  box-sizing: border-box;
 }
 
 .lockscreen-controls {
@@ -582,7 +95,9 @@ body::before {
   flex-direction: column;
   align-items: center;
   padding: 22px 18px 18px 18px;
+  box-sizing: border-box;
 }
+
 #password-input {
   width: 100%;
   box-sizing: border-box;
@@ -593,7 +108,6 @@ body::before {
   margin-bottom: 15px;
   background: #fffef4;
 }
-
 #password-input:focus {
   border: 2px solid darkred;
   box-shadow: 0 2px 10px #b0956a55;
@@ -617,6 +131,10 @@ body::before {
   text-transform: uppercase;
   letter-spacing: 0.13em;
 }
+#submit-btn:hover {
+  background: crimson;
+  box-shadow: 0 6px 16px #80000030, 0 2px 0 #fff5 inset;
+}
 #error-msg {
   color: darkred !important;
   font-weight: bold;
@@ -632,11 +150,351 @@ body::before {
   box-shadow: 0 2px 8px #0001;
 }
 
-#submit-btn:hover {
-  background: crimson;
-  box-shadow: 0 6px 16px #80000030, 0 2px 0 #fff5 inset;
+/* Header Section */
+.dossier-header {
+  text-align: center;
+  border-bottom: 2px solid #555;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.dossier-header h1, .dossier-header h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #444;
+}
+.dossier-header h3 {
+  font-size: 2.2rem;
+  color: darkred;
+  margin: 10px 0;
+}
+.case-number {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
 }
 
-
-
+/* Mugshot Section */
+.mugshot-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
 }
+.mugshot {
+  width: 400px;
+  height: auto;
+  border: 4px double #444;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+  filter: sepia(0.25) contrast(0.85);
+  transform: rotate(1deg);
+}
+.mugshot:last-child { transform: rotate(-1deg); }
+
+/* Profile & Records */
+.profile {
+  margin-bottom: 35px;
+  padding: 15px;
+  border-left: 3px solid #888;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.profile-details li { margin-bottom: 8px; color: #555; }
+.record p:first-child,
+.alias {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  border-left: 4px solid crimson;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Stamps & Classified Warning */
+.stamp {
+  display: inline-block;
+  font-family: 'Stardos Stencil', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 4px solid red;
+  padding: 8px 18px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  background-color: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.classified-warning {
+  background: rgba(255, 248, 235, 0.9);
+  border: 2px dashed darkred;
+  padding: 20px 25px;
+  margin: 40px auto;
+  max-width: 750px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #2c2c2c;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.classified-warning h2, .classified-warning h3 {
+  color: darkred;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.classified-warning ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+.classified-warning li { margin-bottom: 6px; }
+.classified-warning a { color: #111; text-decoration: underline; }
+.classified-warning a:hover { color: red; }
+.classified-warning.red-alert {
+  border: 3px dashed darkred;
+  background-color: #fff5f5;
+  box-shadow: 0 0 12px rgba(139, 0, 0, 0.3);
+}
+.classified-warning.red-alert h2,
+.classified-warning.red-alert h3 {
+  color: darkred;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+.classified-warning.red-alert h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* Table Styling */
+.history-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.history-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+.history-table th, .history-table td {
+  border: 1px solid #777;
+  padding: 8px;
+  text-align: left;
+  font-size: 0.95rem;
+  font-family: 'Courier', monospace;
+  background-color: #fcf8ec;
+  color: #2c2c2c;
+}
+.history-table thead th {
+  background-color: #ddd;
+  font-weight: bold;
+  color: #333;
+}
+.history-table tbody tr:nth-child(even) { background-color: #f9f9f9; }
+
+/* Contact */
+.contact-info {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-left: 3px solid #888;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.contact-info h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px dashed #777;
+  padding-bottom: 5px;
+}
+.contact-info ul { list-style: none; padding: 0; }
+.contact-info li { margin-bottom: 10px; }
+.contact-info a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-info a:hover { text-decoration: underline; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 40px;
+  color: #777;
+  border-top: 1px dashed #888;
+  padding-top: 10px;
+}
+
+/* Nav (currently hidden) */
+.fingerprint-nav { display: none !important; }
+
+/* Evidence Photo */
+.evidence-photo {
+  float: right;
+  margin: 10px 0 20px 30px;
+  max-width: 300px;
+  text-align: center;
+}
+.evidence-photo img {
+  width: 100%;
+  border: 2px solid #444;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(2deg);
+}
+.exhibit-label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px 0 0;
+  color: darkred;
+  font-family: 'Courier New', Courier, monospace;
+}
+.caption {
+  font-size: 0.75rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #555;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ───────────────────────────────
+   ACTIVE TAB STYLE FOR SPECTRE NAV
+──────────────────────────────── */
+.tab.active-tab {
+  background-color: #e9d8b7;
+  color: black;
+  font-weight: bold;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles for Phones (max-width: 760px) */
+@media (max-width: 760px) {
+  body {
+    font-size: 0.9rem;
+    padding: 10px;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .typewriter-container {
+    min-height: 92vh;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    overflow-x: hidden;
+    justify-content: flex-start;
+  }
+  .dossier-text {
+    width: 96vw;
+    max-width: 500px;
+    min-width: 0;
+    margin: 30px auto 0 auto;
+    font-size: 1rem;
+    min-height: 200px;
+    padding: 24px 2vw 20px 2vw;
+    box-sizing: border-box;
+  }
+  .lockscreen-controls {
+    width: 96vw;
+    max-width: 420px;
+    margin: 36px auto 26px auto;
+    padding: 16px 2vw 13px 2vw;
+    box-sizing: border-box;
+  }
+  #password-input, #submit-btn {
+    font-size: 1rem;
+    padding: 11px 12px;
+  }
+  #error-msg {
+    font-size: 1rem;
+    padding: 5px 8px;
+  }
+  .dossier-header h1 { font-size: 1rem; }
+  .dossier-header h2 { font-size: 0.9rem; }
+  .dossier-header h3 { font-size: 1.8rem; }
+  .mugshot-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .mugshot {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .record p:first-child, .alias {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .profile { padding: 10px; margin-bottom: 25px; }
+  .profile-details li { margin-bottom: 6px; }
+  .history-table-wrapper { position: relative; }
+  .history-table-wrapper .stamp {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform: rotate(-12deg);
+    font-size: 22px;
+    padding: 6px 14px;
+    border-width: 3px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .history-table th, .history-table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+  .contact-info h2 { font-size: 1.1rem; }
+  .contact-info li { margin-bottom: 8px; }
+  .footer { font-size: 0.75rem; margin-top: 30px; padding-top: 8px; }
+  .stamp {
+    top: 20px;
+    left: 10px;
+    transform: rotate(-10deg);
+    font-size: 18px;
+    padding: 4px 10px;
+    border-width: 2px;
+    z-index: 2;
+  }
+  .evidence-photo {
+    float: none;
+    margin: 20px auto;
+    max-width: 80%;
+    display: block;
+  }
+  .evidence-photo img { transform: rotate(0deg); }
+}
+
