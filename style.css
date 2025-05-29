@@ -489,6 +489,7 @@ body {
     height: 100vh;
      /* width: 100vw; */ --- side scrolling cunt
     padding: 0;
+/ * padding-bottom: 40px; */  --- if dossier padding dont work then uncomment this one ktnxbye
     overflow-x: hidden;
     justify-content: flex-start;
   }
@@ -502,6 +503,7 @@ body {
     min-height: 200px;
     padding: 24px 2vw 20px 2vw;
     margin: 30px auto 0 auto;
+ margin-bottom: 40px;
     border-radius: 15px 15px 0 0;
   }
   .lockscreen-controls {
