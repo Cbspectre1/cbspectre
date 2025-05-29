@@ -487,9 +487,9 @@ body {
   .typewriter-container {
     min-height: 92vh;
     height: 100vh;
-     /* width: 100vw; */ --- side scrolling cunt
+     /* width: 100vw;  --- side scrolling cunt */
     padding: 0;
- padding-bottom: 40px;  --- if dossier padding dont work then uncomment this one ktnxbye
+ padding-bottom: 40px;  /*  --- if dossier padding dont work then uncomment this one ktnxbye */
     overflow-x: hidden;
     justify-content: flex-start;
   }
@@ -503,12 +503,12 @@ body {
     min-height: 200px;
     padding: 24px 2vw 20px 2vw;
     margin: 30px auto 0 auto;
- margin-bottom: 60px;  ---- bottom of the white box 
+ margin-bottom: 60px;  /* ---- bottom of the white box */
     border-radius: 15px 15px 0 0;
   }
   .lockscreen-controls {
     border-radius: 0 0 15px 15px;
-    padding: 16px 2vw 25px 2vw;
+    padding: 16px 2vw 48px 2vw;  /* <-- Make 48px or more if needed */
   }
   #password-input, #submit-btn {
     font-size: 1rem;
