@@ -506,9 +506,16 @@ body {
  margin-bottom: 60px;  /* ---- bottom of the white box */
     border-radius: 15px 15px 0 0;
   }
-  .lockscreen-controls {
+.lockscreen-controls {
+  border-radius: 0 0 15px 15px;
+  padding: 16px 2vw 56px 2vw;   /* More bottom padding for extra space */
+  min-height: 180px;            /* Guarantees it always looks tall—tweak as needed */
+  box-sizing: border-box;
+}
+
+ /* .lockscreen-controls {
     border-radius: 0 0 15px 15px;
-    padding: 16px 2vw 48px 2vw;  /* <-- Make 48px or more if needed */
+    padding: 16px 2vw 48px 2vw;   <-- Make 48px or more if needed   -- commenting out to see if we can fix the lenggt of the box and replaced with the one above for now*/
   }
   #password-input, #submit-btn {
     font-size: 1rem;
