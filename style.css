@@ -489,7 +489,7 @@ body {
     height: 100vh;
      /* width: 100vw; */ --- side scrolling cunt
     padding: 0;
-/ * padding-bottom: 40px; */  --- if dossier padding dont work then uncomment this one ktnxbye
+ padding-bottom: 40px;  --- if dossier padding dont work then uncomment this one ktnxbye
     overflow-x: hidden;
     justify-content: flex-start;
   }
