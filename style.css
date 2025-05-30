@@ -503,7 +503,7 @@ body {
     min-height: 200px;
     padding: 24px 2vw 20px 2vw;
     margin: 30px auto 0 auto;
- margin-bottom: 60px;  /* ---- bottom of the white box */
+ margin-bottom: 150px;  /* ---- bottom of the white box */
     border-radius: 15px 15px 0 0;
   }
 .lockscreen-controls {
