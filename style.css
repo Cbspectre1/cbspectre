@@ -508,8 +508,8 @@ body {
   }
 .lockscreen-controls {
   border-radius: 0 0 15px 15px;
-  padding: 16px 2vw 56px 2vw;   /* More bottom padding for extra space */
-  min-height: 180px;            /* Guarantees it always looks tall—tweak as needed */
+  padding: 16px 2vw 40px 2vw;   /* More bottom padding for extra space */
+  min-height: 300px;            /* Guarantees it always looks tall—tweak as needed CHANGED THIS LETS SEE WHAT IT DOES IT WAS 180 */
   box-sizing: border-box;
 }
 
