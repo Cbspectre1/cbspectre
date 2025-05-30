@@ -508,7 +508,7 @@ body {
   }
 .lockscreen-controls {
   border-radius: 0 0 15px 15px;
-  padding: 16px 2vw 100px 2vw;   /* More bottom padding for extra space */
+  padding: 16px 2vw 275px 2vw;   /* More bottom padding for extra space  CHANGED TO SEE WHAT MOVES*/
   min-height: 110px;            /* ok this is the padding for the damn unlock box LOL  */
   box-sizing: border-box;
 }
