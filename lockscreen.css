@@ -131,8 +131,8 @@
   }
   .lockscreen-controls {
     border-radius: 0 0 15px 15px;
-    padding: 16px 2vw 120px 2vw; /* Adjust bottom padding for more height */
-    min-height: 150px;           /* Increase if you want more height below input */
+    padding: 16px 2vw 100px 2vw; /* Adjust bottom padding for more height */
+    min-height: 200px;           /* Increase if you want more height below input */
     box-sizing: border-box;
   }
   #password-input, #submit-btn {
