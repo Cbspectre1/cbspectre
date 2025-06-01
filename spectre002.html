@@ -28,6 +28,10 @@
   <div id="typewriter-text" class="dossier-text"></div>
   <div class="lockscreen-controls">
     <input type="password" id="password-input" placeholder="Enter access code" />
+<div class="show-password-toggle">
+  <input type="checkbox" id="show-password" />
+  <label for="show-password">Show password</label>
+</div>
 <button id="submit-btn">Unlock</button>
     <p id="error-msg"></p>
   </div>
@@ -211,7 +215,7 @@ function typeEffect() {
       typewriter.innerHTML += char;
     }
     index++;
-    setTimeout(typeEffect, 32); // Adjust speed as needed
+    setTimeout(typeEffect, 10); // Adjust speed as needed
   } else {
     setTimeout(() => {
       const controls = document.querySelector('.lockscreen-controls');
@@ -243,6 +247,16 @@ passwordInput.addEventListener("keypress", function(e) {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".wrapper").style.display = "none";
   typeEffect();
+
+  // Only add this event if the checkbox exists (safe for every page)
+  const showPwd = document.getElementById('show-password');
+  const pwdInput = document.getElementById('password-input');
+  if (showPwd && pwdInput) {
+    showPwd.addEventListener('change', function() {
+      pwdInput.type = this.checked ? 'text' : 'password';
+    });
+  }
 });
+
 </script>
 
