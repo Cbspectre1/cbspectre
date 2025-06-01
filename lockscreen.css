@@ -118,6 +118,14 @@
   accent-color: darkred;
   width: 16px;
   height: 16px;
+  margin: 0;
+}
+
+.eye-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
 }
 
 
