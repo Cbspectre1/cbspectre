@@ -166,7 +166,7 @@ body::before {
   background: rgba(255, 248, 235, 0.9);
   border: 2px dashed darkred;
   /* Even padding all around */
-  padding: 20px 30px;       /* 30px left and right to match wrapper padding */
+  padding: 20px 20px;       /* 30px left and right to match wrapper padding */
   margin: 40px 0;           /* NO left/right margin, just vertical gap */
   width: 100%;              /* Fills wrapper */
   max-width: 100%;          /* Never goes wider than parent */
@@ -430,10 +430,9 @@ body::before {
     display: block;
   }
   .evidence-photo img { transform: rotate(0deg); }
-
-}
  .classified-warning {
     padding: 15px 3vw;   /* A little less padding, flexible with screen width */
     margin: 30px 0;      /* Slightly reduced vertical margin */
     font-size: 0.96rem;  /* Optional: shrink text a touch for smaller screens */
-}
+  }
+} /* <--- THIS closes the entire media query block! */
