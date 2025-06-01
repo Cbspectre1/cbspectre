@@ -126,7 +126,7 @@
     min-height: 1000px;        /* Increase if you want a taller white box on mobile! was 200 */
     padding: 24px 2vw 20px 2vw;
     margin: 30px auto 0 auto;
-    margin-bottom: 5px; /* Lower this for less gap was 150 */
+    margin-bottom: 0px; /* Lower this for less gap was 150 */
     border-radius: 15px 15px 0 0;
   }
   .lockscreen-controls {
