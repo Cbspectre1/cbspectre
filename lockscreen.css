@@ -126,18 +126,19 @@
     min-height: 1000px;        /* Increase if you want a taller white box on mobile! was 200 */
     padding: 24px 2vw 20px 2vw;
     margin: 30px auto 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px; /* Lower this for less gap was 150 */
     border-radius: 15px 15px 0 0;
   }
   .lockscreen-controls {
     border-radius: 0 0 15px 15px;
     padding: 16px 2vw 100px 2vw; /* Adjust bottom padding for more height */
-    min-height: 200px;           /* Increase if you want more height below input */
+    min-height: 250px;           /* Increase if you want more height below input */
     box-sizing: border-box;
   }
   #password-input, #submit-btn {
     font-size: 1rem;
     padding: 11px 12px;
+ margin-bottom: 7px; 
   }
   #error-msg {
     font-size: 1rem;
