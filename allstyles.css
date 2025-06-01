@@ -206,7 +206,16 @@ body::before {
   border: 3px dashed darkred;
   background-color: #fff5f5;
   box-shadow: 0 0 12px rgba(139, 0, 0, 0.3);
+ /* Alignment styles BELOW or WITHIN this block */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
 .classified-warning.red-alert h2,
 .classified-warning.red-alert h3 {
   color: darkred;
@@ -435,4 +444,9 @@ body::before {
     margin: 30px 0;      /* Slightly reduced vertical margin */
     font-size: 0.96rem;  /* Optional: shrink text a touch for smaller screens */
   }
+.classified-warning.red-alert {
+  max-width: 100% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
 } /* <--- THIS closes the entire media query block! */
