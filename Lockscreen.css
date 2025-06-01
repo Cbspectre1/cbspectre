@@ -123,7 +123,7 @@
   }
   .dossier-text {
     font-size: 1rem;
-    min-height: 200px;        /* Increase if you want a taller white box on mobile! */
+    min-height: 300px;        /* Increase if you want a taller white box on mobile! was 200 */
     padding: 24px 2vw 20px 2vw;
     margin: 30px auto 0 auto;
     margin-bottom: 150px;
