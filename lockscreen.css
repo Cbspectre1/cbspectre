@@ -129,6 +129,30 @@
 }
 
 
+/* === LOCKSCREEN ENFORCER (ALWAYS LAST!) === */
+#lockscreen {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh !important;
+  min-width: 100vw !important;
+  background: #111 !important; /* or rgba(30,30,30,0.97) for a cool overlay */
+  box-sizing: border-box;
+}
+.wrapper {
+  display: none !important;
+}
+body.lockscreen-active {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+
+
 /* ==========================
    RESPONSIVE STYLES (Phones/Tablets)
    ========================== */
