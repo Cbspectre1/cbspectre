@@ -30,7 +30,16 @@
     <input type="password" id="password-input" placeholder="Enter access code" />
 <div class="show-password-toggle">
   <input type="checkbox" id="show-password" />
-  <label for="show-password">Show password</label>
+  <label for="show-password">
+    <span class="eye-icon" id="eye-icon">
+      <!-- Eye icon SVG -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+    </span>
+    <span id="show-password-text">Show password</span>
+  </label>
 </div>
 <button id="submit-btn">Unlock</button>
     <p id="error-msg"></p>
@@ -198,6 +207,7 @@ Then brace yourself...
 You’re about to find All Of Them.
 `;
 
+document.addEventListener("DOMContentLoaded", () => {
 const typewriter = document.getElementById("typewriter-text");
 const passwordInput = document.getElementById("password-input");
 const submitBtn = document.getElementById("submit-btn");
@@ -205,7 +215,6 @@ const errorMsg = document.getElementById("error-msg");
 const correctPassword = "stabbydaddy"; // 👈 Set your real code here
 
 let index = 0;
-
 function typeEffect() {
   if (index < message.length) {
     const char = message.charAt(index);
@@ -215,7 +224,7 @@ function typeEffect() {
       typewriter.innerHTML += char;
     }
     index++;
-    setTimeout(typeEffect, 10); // Adjust speed as needed
+    setTimeout(typeEffect, 5); // Adjust speed as needed will change it was 35 beofre maybeee ill make it 25
   } else {
     setTimeout(() => {
       const controls = document.querySelector('.lockscreen-controls');
@@ -223,7 +232,7 @@ function typeEffect() {
       setTimeout(() => { controls.style.opacity = '1'; }, 10); // smooth fade in
     }, 400); // Pause after typing ends
   }
-} // <--- YOU WERE MISSING THIS BRACKET
+} 
 
 submitBtn.addEventListener("click", () => {
   const input = passwordInput.value.toLowerCase().trim();
@@ -244,19 +253,27 @@ passwordInput.addEventListener("keypress", function(e) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".wrapper").style.display = "none";
-  typeEffect();
-
-  // Only add this event if the checkbox exists (safe for every page)
+ // === Show/Hide Password Logic + Eye Swap ===
   const showPwd = document.getElementById('show-password');
-  const pwdInput = document.getElementById('password-input');
-  if (showPwd && pwdInput) {
+  const eyeIcon = document.getElementById('eye-icon');
+  if (showPwd && passwordInput && eyeIcon) {
     showPwd.addEventListener('change', function() {
-      pwdInput.type = this.checked ? 'text' : 'password';
+      passwordInput.type = this.checked ? 'text' : 'password';
+      // Eye icon swap
+      if (this.checked) {
+        eyeIcon.innerHTML = `
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>`;
+      } else {
+        eyeIcon.innerHTML = `
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20C7 20 2.73 16.11 1 12c.63-1.43 1.64-3.05 3.06-4.57M9.9 4.24A10.91 10.91 0 0 1 12 4c5 0 9.27 3.89 11 8-1.08 2.44-3.05 5.12-6.06 6.91"/>
+            <line x1="1" y1="1" x2="23" y2="23"/>
+          </svg>`;
+      }
     });
   }
 });
-
 </script>
-
