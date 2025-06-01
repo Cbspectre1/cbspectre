@@ -430,4 +430,10 @@ body::before {
     display: block;
   }
   .evidence-photo img { transform: rotate(0deg); }
+
+}
+ .classified-warning {
+    padding: 15px 3vw;   /* A little less padding, flexible with screen width */
+    margin: 30px 0;      /* Slightly reduced vertical margin */
+    font-size: 0.96rem;  /* Optional: shrink text a touch for smaller screens */
 }
