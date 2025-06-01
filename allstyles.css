@@ -165,15 +165,16 @@ body::before {
 .classified-warning {
   background: rgba(255, 248, 235, 0.9);
   border: 2px dashed darkred;
-  padding: 20px 25px;
-  margin: 40px 0;      /* Only top & bottom margin, NO left/right margin */
-  width: 100%;         /* Take full width of wrapper */
-  max-width: 100%;     /* Never be smaller than parent */
+  /* Even padding all around */
+  padding: 20px 30px;       /* 30px left and right to match wrapper padding */
+  margin: 40px 0;           /* NO left/right margin, just vertical gap */
+  width: 100%;              /* Fills wrapper */
+  max-width: 100%;          /* Never goes wider than parent */
   font-family: 'Courier New', Courier, monospace;
   color: #2c2c2c;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  padding-left: 30px;
-  padding-right: 30px;
+ /*  padding-left: 30px;
+  padding-right: 30px; */ 
 }
 
 }
