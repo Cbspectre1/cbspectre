@@ -103,6 +103,23 @@
   box-sizing: border-box;
   box-shadow: 0 2px 8px #0001;
 }
+.show-password-toggle {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.show-password-toggle input[type="checkbox"] {
+  accent-color: darkred;
+  width: 16px;
+  height: 16px;
+}
+
 
 /* ==========================
    RESPONSIVE STYLES (Phones/Tablets)
