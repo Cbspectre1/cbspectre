@@ -28,11 +28,14 @@
   <div id="typewriter-text" class="dossier-text"></div>
   <div class="lockscreen-controls">
     <input type="password" id="password-input" placeholder="Enter access code" />
-<div class="show-password-toggle">
-  <input type="checkbox" id="show-password" />
-  <label for="show-password">Show password</label>
-</div>
-<button id="submit-btn">Unlock</button>
+    <div class="show-password-toggle">
+      <input type="checkbox" id="show-password" />
+      <label for="show-password">
+        <span class="eye-icon" id="eye-icon"></span>
+        <span id="show-password-text">Show password</span>
+      </label>
+    </div>
+    <button id="submit-btn">Unlock</button>
     <p id="error-msg"></p>
   </div>
 </div>
@@ -248,13 +251,34 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".wrapper").style.display = "none";
   typeEffect();
 
-  // Only add this event if the checkbox exists (safe for every page)
   const showPwd = document.getElementById('show-password');
   const pwdInput = document.getElementById('password-input');
-  if (showPwd && pwdInput) {
+  const eyeIcon = document.getElementById('eye-icon');
+  // SVG paths for open/closed eye:
+  const openEyeSVG = `
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+      <circle cx="12" cy="12" r="3"></circle>
+    </svg>`;
+  const closedEyeSVG = `
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20C7 20 2.73 16.11 1 12c.63-1.43 1.64-3.05 3.06-4.57M9.9 4.24A10.91 10.91 0 0 1 12 4c5 0 9.27 3.89 11 8-1.08 2.44-3.05 5.12-6.06 6.91"/>
+      <line x1="1" y1="1" x2="23" y2="23"/>
+    </svg>`;
+
+  if (showPwd && pwdInput && eyeIcon) {
+    // When checkbox changes
     showPwd.addEventListener('change', function() {
       pwdInput.type = this.checked ? 'text' : 'password';
+      eyeIcon.innerHTML = this.checked ? closedEyeSVG : openEyeSVG;
     });
+    // Also toggle when clicking the eye icon itself
+    eyeIcon.addEventListener('click', function(e) {
+      showPwd.checked = !showPwd.checked;
+      showPwd.dispatchEvent(new Event('change')); // triggers above logic
+    });
+    // Set default eye icon
+    eyeIcon.innerHTML = openEyeSVG;
   }
 });
 <!-- script src="lockscreen.js"></script --> 
