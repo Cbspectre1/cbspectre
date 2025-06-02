@@ -108,6 +108,11 @@ body::before {
 .mugshot:last-child {
   transform: rotate(-1deg);
 }
+.mugshot,
+.evidence-photo img,
+.surveillance-photo img {
+  filter: none !important;
+}
 
 /* ===================================================
    PROFILE & RECORDS SECTION
@@ -448,5 +453,10 @@ body::before {
   max-width: 100% !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
+}
+.mugshot,
+.evidence-photo img,
+.surveillance-photo img {
+  filter: none !important;
 }
 } /* <--- THIS closes the entire media query block! */
