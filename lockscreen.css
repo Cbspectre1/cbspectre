@@ -54,8 +54,7 @@
   max-width: 350px; /* or match your design */
   margin: 0 auto 18px auto;
 }
-
-/* Password input and submit button (shared styles) */
+/* Shared styles for both the password input and the unlock button */
 #password-input, #submit-btn {
   width: 100%;
   box-sizing: border-box;
@@ -65,13 +64,18 @@
   margin-bottom: 15px;
 }
 
-/* Password input focus state */
+/* Override/add extra rules just for the password input */
+#password-input {
+  padding-right: 44px;   /* Add space for the eye icon */
+  margin-bottom: 0;      /* Remove gap under the input */
+}
+
+/* Special style for when the password input is focused/clicked */
 #password-input:focus {
   border: 2px solid darkred;
   box-shadow: 0 2px 10px #b0956a55;
   background: #fffbe8;
 }
-
 .eye-icon {
   position: absolute;
   top: 50%;
@@ -81,6 +85,11 @@
   display: flex;
   align-items: center;
   z-index: 2;
+}
+.eye-icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 /* Submit button (visual + interactive states) */
@@ -143,7 +152,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 5px; */
-}
+
 
 /* ==========================
    RESPONSIVE STYLES (Phones/Tablets)
