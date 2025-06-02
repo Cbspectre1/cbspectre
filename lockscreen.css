@@ -51,7 +51,7 @@
 .password-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1000px; /* or match your design 600  was 350 */
+  max-width: 1002px; /* or match your design 1000 */
   margin: 0 auto 18px auto;
 }
 /* Shared styles for both the password input and the unlock button */
@@ -61,7 +61,7 @@
   padding: 13px 18px;
   font-size: 1.12rem;
   border-radius: 7px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /* Override/add extra rules just for the password input */
