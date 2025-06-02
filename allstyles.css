@@ -113,6 +113,17 @@ body::before {
 .surveillance-photo img {
   filter: none !important;
 }
+.exhibit-label {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+.caption {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center; /* Ensures it's centered under the image */
+  letter-spacing: 0.5px;
+}
 
 /* ===================================================
    PROFILE & RECORDS SECTION
