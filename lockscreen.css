@@ -47,6 +47,13 @@
   padding: 22px 18px 18px 18px;
   box-sizing: border-box;
 }
+/* JUST ADDED THIS TO SEE IF THE EYE TING WORKS IF IT DNT REMOVE IT AND REVERT BK TO  CHECK BOX */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* or match your design */
+  margin: 0 auto 18px auto;
+}
 
 /* Password input and submit button (shared styles) */
 #password-input, #submit-btn {
@@ -63,6 +70,17 @@
   border: 2px solid darkred;
   box-shadow: 0 2px 10px #b0956a55;
   background: #fffbe8;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 2;
 }
 
 /* Submit button (visual + interactive states) */
@@ -120,14 +138,12 @@
   height: 16px;
   margin: 0;
 }
-
-.eye-icon {
+/* .eye-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
+  margin-right: 5px; */
 }
-
 
 /* ==========================
    RESPONSIVE STYLES (Phones/Tablets)
