@@ -61,7 +61,7 @@
   padding: 13px 18px;
   font-size: 1.12rem;
   border-radius: 7px;
-  margin-bottom: 25px; /* was 20 but gona test out auto"
+  margin-bottom: 20px; /* was 20 but gona test out auto" */
 }
 
 /* Override/add extra rules just for the password input */
