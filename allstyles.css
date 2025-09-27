@@ -93,9 +93,10 @@ body::before {
    =================================================== */
 .mugshot-section {
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  flex-direction: column;  /* stack children vertically */
+  align-items: center;     /* center them under the image */
   margin-bottom: 35px;
+  gap: 8px;                /* small spacing between image/label/caption */
 }
 .mugshot {
   width: 400px;
